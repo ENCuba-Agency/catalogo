@@ -1,1 +1,37 @@
-Hola Jose!!!
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCuba Agency - Catálogo Optimizado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🇨🇺 ENCuba Agency</h1>
+        <div class="filtros-tipo">
+            <button onclick="filtrarPorTipo('todos')">🌟 Todo</button>
+            <button onclick="filtrarPorTipo('renta')">🏠 Rentas</button>
+            <button onclick="filtrarPorTipo('pasadia')">🏊‍♂️ Pasadías</button>
+        </div>
+        <input type="text" id="buscador" placeholder="Buscar lugar o precio...">
+    </header>
+
+    <main>
+        <div id="contenedor-casas" class="galeria"></div>
+
+        <div class="paginacion">
+            <button id="btn-anterior" onclick="cambiarPagina(-1)">⬅️ Anterior</button>
+            <span id="info-paginacion">Página 1</span>
+            <button id="btn-siguiente" onclick="cambiarPagina(1)">Siguiente ➡️</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ENCuba-Agency - Gestión de Catálogo Digital</p>
+    </footer>
+
+    <script src="js/anuncios.js"></script>
+</body>
+</html>

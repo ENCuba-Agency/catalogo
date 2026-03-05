@@ -1,0 +1,65 @@
+/* BASE Y TIPOGRAFÍA DEL SISTEMA (No gasta datos bajando fuentes) */
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+}
+
+/* CARRUSEL DE FOTOS (Desliza con el dedo) */
+.contenedor-fotos {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 250px;
+}
+
+.contenedor-fotos img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+    content-visibility: auto; /* Optimiza el renderizado */
+}
+
+/* OCULTAR BARRA DE SCROLL */
+.contenedor-fotos::-webkit-scrollbar { display: none; }
+
+/* TARJETAS */
+.tarjeta-casa {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info { padding: 15px; }
+
+/* PAGINACIÓN */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.paginacion button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+}
+
+.paginacion button:disabled { background: #ccc; }
+
+/* VISTA PC (Más de 768px) */
+@media (min-width: 768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
