@@ -6,7 +6,7 @@ let itemsFiltrados = [];
 
 let paginaActual = 1;
 const itemsPorPagina = 10;
-let filtroTipo = 'todos';
+let filtroTipo = 'todo';
 
 async function cargarDatos() {
     try {
@@ -68,11 +68,26 @@ function aplicarFiltros() {
 function actualizarPantalla() {
     const inicio = (paginaActual - 1) * itemsPorPagina;
     const fin = inicio + itemsPorPagina;
-    //const bloque = casasFiltradas.slice(inicio, fin);
     const bloque = itemsFiltrados.slice(inicio, fin);
 
     const contenedor = document.getElementById('contenedor-items');
     contenedor.innerHTML = '';
+
+    // SI NO HAY RESULTADOS
+    if (itemsFiltrados.length === 0) {
+        contenedor.innerHTML = `
+            <div class="sin-resultados">
+                <p>🔍 No encontramos ofertas que coincidan con tu búsqueda.</p>
+                <button onclick="limpiarBusqueda()" class="btn-limpiar">Ver todas las ofertas</button>
+            </div>`;
+        document.querySelector('.paginacion').style.display = 'none'; // Ocultar paginación
+        gestionarFlecha(); // <--- Llamada aquí para ocultarla si no hay items
+
+        return;
+    }
+
+    // SI HAY RESULTADOS, MOSTRAR PAGINACIÓN Y CARDS
+    document.querySelector('.paginacion').style.display = 'flex';
 
 
     bloque.forEach(item => {
@@ -89,7 +104,7 @@ function actualizarPantalla() {
                 <div class="info">
                     <small>${item.tipo.toUpperCase()}</small>
                     <h3>${item.titulo}</h3>
-                    <p class="precio-plan"><b>${item.precio}</b></br><span>${item.plan}</span></p>
+                    <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
 
                     <div class="acciones">
                       <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
@@ -106,12 +121,24 @@ function actualizarPantalla() {
     document.getElementById('info-paginacion').innerText = `Página ${paginaActual} de ${totalPag || 1}`;
     document.getElementById('btn-anterior').disabled = paginaActual === 1;
     document.getElementById('btn-siguiente').disabled = paginaActual >= totalPag;
+
+    gestionarFlecha(); // <--- Llamada aquí para recalcular al cargar los items
+}
+
+// Función auxiliar para resetear todo
+function limpiarBusqueda() {
+    document.getElementById('buscador').value = '';
+    filtrarPorTipo('todo');
 }
 
 function cambiarPagina(n) {
     paginaActual += n;
     actualizarPantalla();
-    window.scrollTo(0,0);
+    // Esto hace que la pantalla suba al inicio suavemente
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // 'smooth' para que no sea un salto brusco
+    });
 }
 
 function generarEnlaceWhatsApp(id, titulo) {
@@ -143,6 +170,11 @@ if (flechaIndicadora) {
 }
 
 if (filtrosContenedor && flechaIndicadora) {
+
+    // Reemplaza tu antiguo event listener por este:
+    filtrosContenedor.addEventListener('scroll', gestionarFlecha);
+    
+    /*
     filtrosContenedor.addEventListener('scroll', () => {
         const scrollMaximo = filtrosContenedor.scrollWidth - filtrosContenedor.clientWidth;
         const scrollActual = filtrosContenedor.scrollLeft;
@@ -154,5 +186,25 @@ if (filtrosContenedor && flechaIndicadora) {
             flechaIndicadora.style.opacity = '1';
         }
     });
+    */
+}
+
+function gestionarFlecha() {
+    const filtros = document.getElementById('contenedorFiltros');
+    const flecha = document.getElementById('flechaIndicadora');
+
+    if (!filtros || !flecha) return;
+
+    // 1. Verificar si el contenido desborda el contenedor (hay scroll)
+    const tieneScroll = filtros.scrollWidth > filtros.clientWidth;
+    const scrollActual = filtros.scrollLeft;
+    const scrollMaximo = filtros.scrollWidth - filtros.clientWidth;
+
+    // 2. Si no hay scroll o ya estamos al final, ocultar
+    if (!tieneScroll || scrollActual >= (scrollMaximo - 10)) {
+        flecha.classList.add('hidden');
+    } else {
+        flecha.classList.remove('hidden');
+    }
 }
 
