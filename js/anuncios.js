@@ -50,10 +50,15 @@ document.getElementById('buscador').addEventListener('input', () => {
 function aplicarFiltros() {
     const texto = document.getElementById('buscador').value.toLowerCase();
     
+
    itemsFiltrados = todosLosItems.filter(c => {
         const matchTipo = filtroTipo === 'todo' || c.tipo === filtroTipo;
         const matchTexto = c.titulo.toLowerCase().includes(texto) || 
-                           c.id.toLowerCase().includes(texto);
+                           //c.id.toLowerCase().includes(texto) || 
+                           c.plan.toLowerCase().includes(texto) || 
+                           c.precio.toLowerCase().includes(texto);
+
+                           
 
         return matchTipo && matchTexto;
         
