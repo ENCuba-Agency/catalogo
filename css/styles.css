@@ -130,3 +130,45 @@ body {
 /* Colores sutiles para identificar la red */
 .btn-red-social.fb { color: #1877F2; border-color: #1877F233; }
 .btn-red-social.canal { color: #25D366; border-color: #25D36633; }
+
+/* Estilo base para todos los botones de filtro */
+.filtros-tipo button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+/* Estilo cuando el botón está seleccionado */
+.filtros-tipo button.active {
+    background-color: #007bff; /* Color azul para resaltar */
+    color: white;
+    border-color: #0056b3;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* CONTENEDOR DE FILTROS (Optimización para móviles) */
+.filtros-tipo {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que los botones salten de línea */
+    gap: 10px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory; /* Desplazamiento suave */
+    -webkit-overflow-scrolling: touch; /* Suavidad en iOS */
+}
+
+/* Ocultar la barra de scroll en los filtros para que se vea limpio */
+.filtros-tipo::-webkit-scrollbar {
+    display: none;
+}
+
+.filtros-tipo button {
+    flex: 0 0 auto; /* Importante: evita que los botones se encojan */
+    scroll-snap-align: start;
+}

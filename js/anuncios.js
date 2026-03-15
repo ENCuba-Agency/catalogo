@@ -24,6 +24,21 @@ async function cargarDatos() {
 function filtrarPorTipo(tipo) {
     filtroTipo = tipo;
     paginaActual = 1;
+
+    // 1. Quitar la clase 'active' de todos los botones de filtro
+    const botones = document.querySelectorAll('.filtros-tipo button');
+    botones.forEach(btn => btn.classList.remove('active'));
+
+    // 2. Buscar el botón presionado y ponerle la clase 'active'
+    // Buscamos por el atributo onclick que contiene el tipo
+    const botonActivo = Array.from(botones).find(btn => 
+        btn.getAttribute('onclick').includes(`'${tipo}'`)
+    );
+    
+    if (botonActivo) {
+        botonActivo.classList.add('active');
+    }
+
     aplicarFiltros();
 }
 
