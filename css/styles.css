@@ -188,6 +188,13 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* El contenedor padre debe ser relativo */
+.wrapper-filtros {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 /* CONTENEDOR DE FILTROS (Optimización para móviles) */
 .filtros-tipo {
     display: flex;
@@ -195,15 +202,40 @@ header {
     white-space: nowrap;
     gap: 8px;
     padding: 10px 15px; /* Padding lateral para que el primer botón no pegue al borde */
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
     margin-bottom: 5px;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Suavidad total en móviles */
+    
     scroll-behavior: smooth;
 }
 
 /* Ocultar barra de scroll para que se vea como una App */
 .filtros-tipo::-webkit-scrollbar {
     display: none;
+}
+
+/* Estilo de la flecha indicadora */
+.indicador-scroll {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(244, 244, 244, 0), #f4f4f4 80%);
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    pointer-events: none; /* No estorba al hacer clic */
+    transition: opacity 0.3s ease;
+}
+
+/* Clase para ocultar la flecha cuando ya no sea necesaria */
+.hidden {
+    opacity: 0;
 }
 
 .filtros-tipo button {

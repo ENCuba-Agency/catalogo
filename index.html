@@ -13,15 +13,18 @@
         <div class="contenedor-buscador">
             <input type="text" id="buscador" placeholder="🔎 Buscar en título...">
         </div>
-        <div class="filtros-tipo">
-            <button onclick="filtrarPorTipo('todo')" class="active">🌟 Todo</button>
-            <button onclick="filtrarPorTipo('renta')">🏠 Rentas</button>
-            <button onclick="filtrarPorTipo('hotel')">🏨 Hoteles</button>
-            <button onclick="filtrarPorTipo('pasadia')">🏊‍♂️ Pasadías</button>
-            <button onclick="filtrarPorTipo('piscina')">🌊 Piscinas</button>
-            <button onclick="filtrarPorTipo('transporte')">🚌 Transporte</button>
-            <button onclick="filtrarPorTipo('ofertafinsemana')">🗓️ Fin de Semana</button>
-            <button onclick="filtrarPorTipo('ofertavacaciones')">🍹 Vacaciones</button>
+        <div class="wrapper-filtros"></div>
+            <div class="filtros-tipo" id="contenedorFiltros">
+                <button onclick="filtrarPorTipo('todo')" class="active">🌟 Todo</button>
+                <button onclick="filtrarPorTipo('renta')">🏠 Rentas</button>
+                <button onclick="filtrarPorTipo('hotel')">🏨 Hoteles</button>
+                <button onclick="filtrarPorTipo('pasadia')">🏊‍♂️ Pasadías</button>
+                <button onclick="filtrarPorTipo('piscina')">🌊 Piscinas</button>
+                <button onclick="filtrarPorTipo('transporte')">🚌 Transporte</button>
+                <button onclick="filtrarPorTipo('ofertafinsemana')">🗓️ Fin de Semana</button>
+                <button onclick="filtrarPorTipo('ofertavacaciones')">🍹 Vacaciones</button>
+            </div>
+            <div class="indicador-scroll" id="flechaIndicadora">→</div>
         </div>
     </header>
 
