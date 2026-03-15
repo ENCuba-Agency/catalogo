@@ -10,7 +10,9 @@
 
     <header>
         <h1>🇨🇺 ENCuba Agencia</h1>
-        <h3>&nbsp;&nbsp;Ofertas Recientes</h3>
+        <div class="contenedor-buscador">
+            <input type="text" id="buscador" placeholder="🔎 Buscar en título...">
+        </div>
         <div class="filtros-tipo">
             <button onclick="filtrarPorTipo('todo')" class="active">🌟 Todo</button>
             <button onclick="filtrarPorTipo('renta')">🏠 Rentas</button>
@@ -21,7 +23,6 @@
             <button onclick="filtrarPorTipo('ofertafinsemana')">🗓️ Fin de Semana</button>
             <button onclick="filtrarPorTipo('ofertavacaciones')">🍹 Vacaciones</button>
         </div>
-        <input type="text" id="buscador" placeholder="Buscar dentro del título...">
     </header>
 
     <main>

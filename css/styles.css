@@ -1,9 +1,18 @@
 /* BASE Y TIPOGRAFÍA DEL SISTEMA (No gasta datos bajando fuentes) */
 body {
     font-family: -apple-system, system-ui, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ebedef;;
     margin: 0;
     padding: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que pase por encima de las fotos */
+    background-color: #f4f4f4; /* Debe coincidir con el fondo del body o ser blanco */
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 /* CARRUSEL DE FOTOS (Desliza con el dedo) */
@@ -28,10 +37,9 @@ body {
 /* TARJETAS */
 .tarjeta-item {
     background: white;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 16px; /* Bordes más modernos */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra difuminada y suave */
+    border: 1px solid rgba(0,0,0,0.03); /* Borde casi invisible para definir */
 }
 
 .info { padding: 15px; }
@@ -91,8 +99,23 @@ body {
 }
 
 /* Contenedor de información */
-.info h3 { margin: 10px 0; color: #333; }
-.precio-plan { color: #007bff; font-size: 1.1em; margin-bottom: 15px; }
+.info h3 {
+    color: #1a1a1a; /* Negro casi puro para el título */
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.precio-plan {
+    color: #34495e; /* Azul grisáceo oscuro, muy elegante */
+    font-size: 1.05rem;
+    letter-spacing: -0.2px;
+}
+
+.precio-plan b {
+    color: #1a1a1a; /* El precio en negro para que resalte */
+    margin-bottom: 8px; /* Este es el espacio que buscas */
+    display: inline-block; /* Asegura que el margen se aplique correctamente */
+}
 
 /* Grupo de botones */
 .acciones {
@@ -157,8 +180,8 @@ body {
     overflow-x: auto;
     white-space: nowrap; /* Evita que los botones salten de línea */
     gap: 10px;
-    padding: 10px 5px;
-    margin-bottom: 15px;
+    padding: 5px 5px;
+    margin-bottom: 5px;
     scroll-snap-type: x mandatory; /* Desplazamiento suave */
     -webkit-overflow-scrolling: touch; /* Suavidad en iOS */
 }
@@ -171,4 +194,32 @@ body {
 .filtros-tipo button {
     flex: 0 0 auto; /* Importante: evita que los botones se encojan */
     scroll-snap-align: start;
+}
+
+header h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 800;
+}
+
+.contenedor-buscador {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#buscador {
+    width: 90%;
+    max-width: 500px;
+    padding: 5px;
+    border-radius: 25px; /* Bordes redondeados para un look más moderno */
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#buscador:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
 }
