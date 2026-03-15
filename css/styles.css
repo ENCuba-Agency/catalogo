@@ -11,7 +11,7 @@ header {
     top: 0;
     z-index: 1000; /* Asegura que pase por encima de las fotos */
     background-color: #f4f4f4; /* Debe coincidir con el fondo del body o ser blanco */
-    padding: 5px 0;
+    padding: 2px 0;
     border-bottom: 1px solid #ddd;
 }
 
@@ -192,7 +192,9 @@ header {
 .wrapper-filtros {
     position: relative;
     display: flex;
+    flex-direction: column; /* Alinea filtros arriba y flecha abajo */
     align-items: center;
+    padding-bottom: 5px;
 }
 
 /* CONTENEDOR DE FILTROS (Optimización para móviles) */
@@ -218,25 +220,31 @@ header {
 
 /* Estilo de la flecha indicadora */
 .indicador-scroll {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, rgba(244, 244, 244, 0), #f4f4f4 80%);
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    width: 100%;
+    padding: 5px 20px; /* Espacio extra a la derecha para que no pegue al borde físico */
     color: #007bff;
+    font-size: 1.1rem; /* Tamaño equilibrado */
     font-weight: bold;
-    font-size: 1.2rem;
-    pointer-events: none; /* No estorba al hacer clic */
-    transition: opacity 0.3s ease;
-    z-index: 10; /* Añade esto para que la flecha flote sobre los botones */
+    box-sizing: border-box; /* Asegura que el padding no estire el contenedor */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    /* Animación de vaivén hacia la derecha */
+    animation: bounceRight 1.5s infinite;
 }
 
-/* Clase para ocultar la flecha cuando ya no sea necesaria */
-.hidden {
+@keyframes bounceRight {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+    40% { transform: translateX(-5px); } /* Movimiento de "ven hacia acá" */
+    60% { transform: translateX(-2px); }
+}
+
+/* Ocultar cuando no hay más scroll */
+.indicador-scroll.hidden {
     opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .filtros-tipo button {

@@ -130,6 +130,18 @@ cargarDatos();
 const filtrosContenedor = document.getElementById('contenedorFiltros');
 const flechaIndicadora = document.getElementById('flechaIndicadora');
 
+if (flechaIndicadora) {
+    flechaIndicadora.style.cursor = 'pointer'; // Para que en PC salga la manito
+    
+    flechaIndicadora.addEventListener('click', () => {
+        // Desliza 150 píxeles a la derecha cada vez que haces clic
+        filtrosContenedor.scrollBy({
+            left: 150,
+            behavior: 'smooth'
+        });
+    });
+}
+
 if (filtrosContenedor && flechaIndicadora) {
     filtrosContenedor.addEventListener('scroll', () => {
         const scrollMaximo = filtrosContenedor.scrollWidth - filtrosContenedor.clientWidth;
