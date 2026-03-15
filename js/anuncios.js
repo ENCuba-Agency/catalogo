@@ -89,7 +89,7 @@ function actualizarPantalla() {
                 <div class="info">
                     <small>${item.tipo.toUpperCase()}</small>
                     <h3>${item.titulo}</h3>
-                    <p class="precio-plan"><b>${item.precio}</b> </br> • <span>${item.plan}</span></p>
+                    <p class="precio-plan"><b>${item.precio}</b></br><span>${item.plan}</span></p>
 
                     <div class="acciones">
                       <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
