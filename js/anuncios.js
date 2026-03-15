@@ -95,15 +95,7 @@ function actualizarPantalla() {
                       <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
                       target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
 
-                        <div class="enlaces-secundarios">
-                            <a href="${item.link_fb}" target="_blank" class="btn-red-social fb">
-                                Facebook
-                            </a>
-                    
-                            <a href="${item.link_wa}" target="_blank" class="btn-red-social canal">
-                                Canal WhatsApp
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>`;
