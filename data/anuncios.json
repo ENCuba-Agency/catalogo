@@ -1,6 +1,6 @@
 [
   {
-    "id": 260307103501,
+    "id": "260307-1035-01",
     "titulo": "☀️ Tryp Habana Libre ★★★★",
     "tipo": "hotel",
     "plan": "* Plan: Alojamiento, desayuno, almuerzo y cena </br>* Estancia mínima: 2 noches.",
@@ -11,7 +11,7 @@
     "link_wa": "link a whatsapp"
   },
   {
-    "id": 260307103502,
+    "id": "260307-1035-02",
     "titulo": "☀️ GRAND PACKARD ★★★★★ </br>LA HABANA",
     "tipo": "hotel",
     "plan": "* Plan: Alojamiento y desayuno. </br> * Estancia mínima: 3 noches.",
@@ -25,7 +25,7 @@
 
 
   {
-    "id": 1,
+    "id": "1",
     "titulo": "Villa Luaces - Guanabo",
     "tipo": "renta",
     "hotel_plan": "",
@@ -38,7 +38,7 @@
     "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
-    "id": 2,
+    "id": "2",
     "titulo": "Pasadía El Oasis - Cotorro",
     "tipo": "pasadia",
     "hotel_plan": "",
@@ -52,7 +52,7 @@
   
   
   {
-    "id": 5,
+    "id": "5",
     "titulo": "Penthouse Sueño - Miramar",
     "tipo": "piscina",
     "hotel_plan": "",
@@ -65,7 +65,7 @@
   },
   
   {
-    "id": 7,
+    "id": "7",
     "titulo": "Pasadía VIP - Siboney",
     "tipo": "transporte",
     "hotel_plan": "",
@@ -77,7 +77,7 @@
     "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
-    "id": 8,
+    "id": "8",
     "titulo": "Pasadía Finca Alegría - San Miguel",
     "tipo": "pasadia",
     "hotel_plan": "",
@@ -91,7 +91,7 @@
   
   
   {
-    "id": 13,
+    "id": "13",
     "titulo": "Renta 13 - Suite Mirador",
     "tipo": "ofertafinsemana",
     "hotel_plan": "",
@@ -103,7 +103,7 @@
     "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
-    "id": 14,
+    "id": "14",
     "titulo": "Renta 14 - Hostal San Lázaro",
     "tipo": "renta",
     "hotel_plan": "",
@@ -116,7 +116,7 @@
   },
   
   {
-    "id": 17,
+    "id": "17",
     "titulo": "Renta 17 - Estudio Loft",
     "tipo": "renta",
     "hotel_plan": "",
@@ -129,7 +129,7 @@
   },
   
   {
-    "id": 20,
+    "id": "20",
     "titulo": "Renta 20 - Residencia Diplomat",
     "tipo": "ofertavacaciones",
     "hotel_plan": "",
@@ -141,7 +141,7 @@
     "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
-    "id": 21,
+    "id": "21",
     "titulo": "Renta 21 - Mini Apto",
     "tipo": "renta",
     "hotel_plan": "",

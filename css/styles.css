@@ -21,6 +21,11 @@ header {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     height: 250px;
+    background-color: #eee; /* Color de fondo mientras carga la imagen */
+    border-radius: 12px 12px 0 0;
+    /* Optimización de renderizado */
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 250px;
 }
 
 .contenedor-fotos img {

@@ -49,15 +49,11 @@ document.getElementById('buscador').addEventListener('input', () => {
 
 function aplicarFiltros() {
     const texto = document.getElementById('buscador').value.toLowerCase();
-    /*casasFiltradas = todasLasCasas.filter(c => {
-        const matchTipo = filtroTipo === 'todos' || c.tipo === filtroTipo;
-        const matchTexto = c.titulo.toLowerCase().includes(texto);
-        return matchTipo && matchTexto;
-        
-    })*/
+    
    itemsFiltrados = todosLosItems.filter(c => {
         const matchTipo = filtroTipo === 'todo' || c.tipo === filtroTipo;
-        const matchTexto = c.titulo.toLowerCase().includes(texto);
+        const matchTexto = c.titulo.toLowerCase().includes(texto) || 
+                           c.id.toLowerCase().includes(texto);
 
         return matchTipo && matchTexto;
         
@@ -91,9 +87,16 @@ function actualizarPantalla() {
 
 
     bloque.forEach(item => {
-        let fotos = item.fotos.map((url, i) => 
-            `<img src="${url}" ${i > 0 ? 'loading="lazy"' : ''}>`
-        ).join('');
+
+        let fotos = item.fotos.map((url, i) => {
+        if (i === 0) {
+            // La primera foto carga normal para que no se vea vacío
+            return `<img src="${url}" alt="${item.titulo}">`;
+        } else {
+            // Las demás fotos usan lazy loading real
+            return `<img src="${url}" loading="lazy" alt="${item.titulo} - vista ${i + 1}">`;
+        }
+    }).join('');
 
         contenedor.innerHTML += `
             <div class="tarjeta-item">
