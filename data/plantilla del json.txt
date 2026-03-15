@@ -1,0 +1,12 @@
+,
+{
+    "id": -1,
+    "titulo": "PLANTILLA",
+    "tipo": "",
+    "plan": "",
+    "precio": "",
+    "descripcion": "",
+    "fotos": [""],
+    "link_fb": "Estamos en Facebook:</br>link a facebook",
+    "link_wa": "Estamos en Whatsapp:</br>link a whatsapp"
+  }

@@ -1,186 +1,156 @@
 [
   {
+    "id": 260307103501,
+    "titulo": "☀️ Tryp Habana Libre ★★★★",
+    "tipo": "hotel",
+    "plan": "* Plan: Alojamiento, desayuno, almuerzo y cena </br>* Estancia mínima: 2 noches.",
+    "precio": "Precios por 2 noches por habitación (CUP) : </br></br>&nbsp;Marzo-abril </br> Habitación Standard </br> 2Ad- 96,421.32mn </br></br> Habitación Junior Suite </br> 2Ad- 163,087mn",
+    "descripcion": "",
+    "fotos": ["img/260307103501-01.jpeg"],
+    "link_fb": "Estamos en Facebook:</br>link a facebook",
+    "link_wa": "Estamos en Whatsapp:</br>link a whatsapp"
+  },
+  {
+    "id": 260307103502,
+    "titulo": "☀️ GRAND PACKARD ★★★★★ </br>LA HABANA",
+    "tipo": "hotel",
+    "plan": "* Plan: Alojamiento y desayuno. </br> * Estancia mínima: 3 noches.",
+    "precio": "Precios por 3 noches por habitación (CUP) : </br></br>&nbsp;MARZO </br> 1 adult.     143,000cup </br> 2 adult.     179,000cup </br> 1 adult  1 menor. 179,000cup </br> 2 adult  1 menor. 199,000cup",
+    "descripcion": "",
+    "fotos": ["img/260307103502-01.jpeg"],
+    "link_fb": "Estamos en Facebook:</br>link a facebook",
+    "link_wa": "Estamos en Whatsapp:</br>link a whatsapp"
+  },
+
+
+
+  {
     "id": 1,
     "titulo": "Villa Luaces - Guanabo",
     "tipo": "renta",
-    "precio": "60 USD/noche",
+    "hotel_plan": "",
+
+    "precio": "60 USD/noche </br> RENTA",
     "descripcion": "Piscina privada y 3 cuartos climatizados.",
-    "fotos": ["img/v1_1.webp", "img/v1_2.webp", "img/v1_3.webp", "img/v1_4.webp", "img/v1_5.webp", "img/v1_6.webp", "img/v1_7.webp", "img/v1_8.webp", "img/v1_9.webp", "img/v1_10.webp"]
+    "fotos": ["img/v1_1.webp", "img/v1_2.webp", "img/v1_3.webp", "img/v1_4.webp", "img/v1_5.webp", "img/v1_6.webp", "img/v1_7.webp", "img/v1_8.webp", "img/v1_9.webp", "img/v1_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
     "id": 2,
     "titulo": "Pasadía El Oasis - Cotorro",
     "tipo": "pasadia",
-    "precio": "1500 CUP/persona",
+    "hotel_plan": "",
+    "precio": "1500 CUP/persona </br> PASADIA",
     "descripcion": "Piscina grande y ranchón para fiestas.",
-    "fotos": ["img/p2_1.webp", "img/p2_2.webp", "img/p2_3.webp", "img/p2_4.webp", "img/p2_5.webp", "img/p2_6.webp", "img/p2_7.webp", "img/p2_8.webp", "img/p2_9.webp", "img/p2_10.webp"]
+    "fotos": ["img/p2_1.webp", "img/p2_2.webp", "img/p2_3.webp", "img/p2_4.webp", "img/p2_5.webp", "img/p2_6.webp", "img/p2_7.webp", "img/p2_8.webp", "img/p2_9.webp", "img/p2_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
-  {
-    "id": 3,
-    "titulo": "Apto Moderno - Vedado",
-    "tipo": "renta",
-    "precio": "45 USD/noche",
-    "descripcion": "Vista al mar y Wifi incluido.",
-    "fotos": ["img/v3_1.webp", "img/v3_2.webp", "img/v3_3.webp", "img/v3_4.webp", "img/v3_5.webp", "img/v3_6.webp", "img/v3_7.webp", "img/v3_8.webp", "img/v3_9.webp", "img/v3_10.webp"]
-  },
-  {
-    "id": 4,
-    "titulo": "Pasadía La Cascada - La Lisa",
-    "tipo": "pasadia",
-    "precio": "1200 CUP/persona",
-    "descripcion": "Ideal para niños, piscina de poca profundidad.",
-    "fotos": ["img/p4_1.webp", "img/p4_2.webp", "img/p4_3.webp", "img/p4_4.webp", "img/p4_5.webp", "img/p4_6.webp", "img/p4_7.webp", "img/p4_8.webp", "img/p4_9.webp", "img/p4_10.webp"]
-  },
+  
+  
   {
     "id": 5,
     "titulo": "Penthouse Sueño - Miramar",
-    "tipo": "renta",
-    "precio": "80 USD/noche",
-    "descripcion": "Lujo total con jacuzzi en terraza.",
-    "fotos": ["img/v5_1.webp", "img/v5_2.webp", "img/v5_3.webp", "img/v5_4.webp", "img/v5_5.webp", "img/v5_6.webp", "img/v5_7.webp", "img/v5_8.webp", "img/v5_9.webp", "img/v5_10.webp"]
+    "tipo": "piscina",
+    "hotel_plan": "",
+    "precio": "80 USD/noche </br>PISCINA",
+    "descripcion": "Lujo total con jacuzzi en terraza. ",
+    "fotos": ["img/v5_1.webp", "img/v5_2.webp", "img/v5_3.webp", "img/v5_4.webp", "img/v5_5.webp", "img/v5_6.webp", "img/v5_7.webp", "img/v5_8.webp", "img/v5_9.webp", "img/v5_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
-  {
-    "id": 6,
-    "titulo": "Pasadía Rancho Luna - Boyeros",
-    "tipo": "pasadia",
-    "precio": "2000 CUP/familia",
-    "descripcion": "Ambiente campestre y parrillada.",
-    "fotos": ["img/p6_1.webp", "img/p6_2.webp", "img/p6_3.webp", "img/p6_4.webp", "img/p6_5.webp", "img/p6_6.webp", "img/p6_7.webp", "img/p6_8.webp", "img/p6_9.webp", "img/p6_10.webp"]
-  },
+  
   {
     "id": 7,
     "titulo": "Pasadía VIP - Siboney",
-    "tipo": "pasadia",
-    "precio": "25 USD/persona",
-    "descripcion": "Servicio premium con almuerzo incluido.",
-    "fotos": ["img/p7_1.webp", "img/p7_2.webp", "img/p7_3.webp", "img/p7_4.webp", "img/p7_5.webp", "img/p7_6.webp", "img/p7_7.webp", "img/p7_8.webp", "img/p7_9.webp", "img/p7_10.webp"]
+    "tipo": "transporte",
+    "hotel_plan": "",
+    "precio": "25 USD/persona </br>TRANSPORTE",
+    "descripcion": "Servicio premium con almuerzo incluido. ",
+    "fotos": ["img/p7_1.webp", "img/p7_2.webp", "img/p7_3.webp", "img/p7_4.webp", "img/p7_5.webp", "img/p7_6.webp", "img/p7_7.webp", "img/p7_8.webp", "img/p7_9.webp", "img/p7_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
     "id": 8,
     "titulo": "Pasadía Finca Alegría - San Miguel",
     "tipo": "pasadia",
+    "hotel_plan": "",
     "precio": "1000 CUP/persona",
     "descripcion": "Gran piscina para grupos de amigos.",
-    "fotos": ["img/p8_1.webp", "img/p8_2.webp", "img/p8_3.webp", "img/p8_4.webp", "img/p8_5.webp", "img/p8_6.webp", "img/p8_7.webp", "img/p8_8.webp", "img/p8_9.webp", "img/p8_10.webp"]
+    "fotos": ["img/p8_1.webp", "img/p8_2.webp", "img/p8_3.webp", "img/p8_4.webp", "img/p8_5.webp", "img/p8_6.webp", "img/p8_7.webp", "img/p8_8.webp", "img/p8_9.webp", "img/p8_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
-  {
-    "id": 9,
-    "titulo": "Pasadía Las Palmeras - Guanabacoa",
-    "tipo": "pasadia",
-    "precio": "1300 CUP/persona",
-    "descripcion": "Rodeado de naturaleza y tranquilidad.",
-    "fotos": ["img/p9_1.webp", "img/p9_2.webp", "img/p9_3.webp", "img/p9_4.webp", "img/p9_5.webp", "img/p9_6.webp", "img/p9_7.webp", "img/p9_8.webp", "img/p9_9.webp", "img/p9_10.webp"]
-  },
-  {
-    "id": 10,
-    "titulo": "Pasadía El Recreo - Marianao",
-    "tipo": "pasadia",
-    "precio": "1100 CUP/persona",
-    "descripcion": "Música, sombra y buena piscina.",
-    "fotos": ["img/p10_1.webp", "img/p10_2.webp", "img/p10_3.webp", "img/p10_4.webp", "img/p10_5.webp", "img/p10_6.webp", "img/p10_7.webp", "img/p10_8.webp", "img/p10_9.webp", "img/p10_10.webp"]
-  },
-  {
-    "id": 11,
-    "titulo": "Renta 11 - Casa Colonial",
-    "tipo": "renta",
-    "precio": "30 USD/noche",
-    "descripcion": "Habana Vieja cerca del Capitolio.",
-    "fotos": ["img/v11_1.webp", "img/v11_2.webp", "img/v11_3.webp", "img/v11_4.webp", "img/v11_5.webp", "img/v11_6.webp", "img/v11_7.webp", "img/v11_8.webp", "img/v11_9.webp", "img/v11_10.webp"]
-  },
-  {
-    "id": 12,
-    "titulo": "Renta 12 - Villa Blanca",
-    "tipo": "renta",
-    "precio": "100 USD/noche",
-    "descripcion": "Frente al mar en Tarará.",
-    "fotos": ["img/v12_1.webp", "img/v12_2.webp", "img/v12_3.webp", "img/v12_4.webp", "img/v12_5.webp", "img/v12_6.webp", "img/v12_7.webp", "img/v12_8.webp", "img/v12_9.webp", "img/v12_10.webp"]
-  },
+  
+  
   {
     "id": 13,
     "titulo": "Renta 13 - Suite Mirador",
-    "tipo": "renta",
-    "precio": "55 USD/noche",
-    "descripcion": "Piso 15 en el Vedado con vista panorámica.",
-    "fotos": ["img/v13_1.webp", "img/v13_2.webp", "img/v13_3.webp", "img/v13_4.webp", "img/v13_5.webp", "img/v13_6.webp", "img/v13_7.webp", "img/v13_8.webp", "img/v13_9.webp", "img/v13_10.webp"]
+    "tipo": "ofertafinsemana",
+    "hotel_plan": "",
+    "precio": "55 USD/noche </br> OFERTA FIN DE SEMANA",
+    "descripcion": "Piso 15 en el Vedado con vista panorámica. ",
+    "fotos": ["img/v13_1.webp", "img/v13_2.webp", "img/v13_3.webp", "img/v13_4.webp", "img/v13_5.webp", "img/v13_6.webp", "img/v13_7.webp", "img/v13_8.webp", "img/v13_9.webp", "img/v13_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
     "id": 14,
     "titulo": "Renta 14 - Hostal San Lázaro",
     "tipo": "renta",
+    "hotel_plan": "",
     "precio": "25 USD/noche",
     "descripcion": "Económico y céntrico.",
-    "fotos": ["img/v14_1.webp", "img/v14_2.webp", "img/v14_3.webp", "img/v14_4.webp", "img/v14_5.webp", "img/v14_6.webp", "img/v14_7.webp", "img/v14_8.webp", "img/v14_9.webp", "img/v14_10.webp"]
+    "fotos": ["img/v14_1.webp", "img/v14_2.webp", "img/v14_3.webp", "img/v14_4.webp", "img/v14_5.webp", "img/v14_6.webp", "img/v14_7.webp", "img/v14_8.webp", "img/v14_9.webp", "img/v14_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
-  {
-    "id": 15,
-    "titulo": "Renta 15 - Casa de la Música",
-    "tipo": "renta",
-    "precio": "40 USD/noche",
-    "descripcion": "Vibrante zona de Centro Habana.",
-    "fotos": ["img/v15_1.webp", "img/v15_2.webp", "img/v15_3.webp", "img/v15_4.webp", "img/v15_5.webp", "img/v15_6.webp", "img/v15_7.webp", "img/v15_8.webp", "img/v15_9.webp", "img/v15_10.webp"]
-  },
-  {
-    "id": 16,
-    "titulo": "Renta 16 - Villa Palmeras",
-    "tipo": "renta",
-    "precio": "120 USD/noche",
-    "descripcion": "Santa María del Mar, lujo total.",
-    "fotos": ["img/v16_1.webp", "img/v16_2.webp", "img/v16_3.webp", "img/v16_4.webp", "img/v16_5.webp", "img/v16_6.webp", "img/v16_7.webp", "img/v16_8.webp", "img/v16_9.webp", "img/v16_10.webp"]
-  },
+  
   {
     "id": 17,
     "titulo": "Renta 17 - Estudio Loft",
     "tipo": "renta",
+    "hotel_plan": "",
     "precio": "35 USD/noche",
     "descripcion": "Diseño industrial en el Vedado.",
-    "fotos": ["img/v17_1.webp", "img/v17_2.webp", "img/v17_3.webp", "img/v17_4.webp", "img/v17_5.webp", "img/v17_6.webp", "img/v17_7.webp", "img/v17_8.webp", "img/v17_9.webp", "img/v17_10.webp"]
+    "fotos": ["img/v17_1.webp", "img/v17_2.webp", "img/v17_3.webp", "img/v17_4.webp", "img/v17_5.webp", "img/v17_6.webp", "img/v17_7.webp", "img/v17_8.webp", "img/v17_9.webp", "img/v17_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
-  {
-    "id": 18,
-    "titulo": "Renta 18 - Casa de Abuelos",
-    "tipo": "renta",
-    "precio": "20 USD/noche",
-    "descripcion": "Ambiente familiar en Boyeros.",
-    "fotos": ["img/v18_1.webp", "img/v18_2.webp", "img/v18_3.webp", "img/v18_4.webp", "img/v18_5.webp", "img/v18_6.webp", "img/v18_7.webp", "img/v18_8.webp", "img/v18_9.webp", "img/v18_10.webp"]
-  },
-  {
-    "id": 19,
-    "titulo": "Renta 19 - Bungalow Playa",
-    "tipo": "renta",
-    "precio": "90 USD/noche",
-    "descripcion": "Boca Ciega a pasos de la arena.",
-    "fotos": ["img/v19_1.webp", "img/v19_2.webp", "img/v19_3.webp", "img/v19_4.webp", "img/v19_5.webp", "img/v19_6.webp", "img/v19_7.webp", "img/v19_8.webp", "img/v19_9.webp", "img/v19_10.webp"]
-  },
+  
   {
     "id": 20,
     "titulo": "Renta 20 - Residencia Diplomat",
-    "tipo": "renta",
-    "precio": "150 USD/noche",
-    "descripcion": "Zona exclusiva de Siboney con piscina gigante.",
-    "fotos": ["img/v20_1.webp", "img/v20_2.webp", "img/v20_3.webp", "img/v20_4.webp", "img/v20_5.webp", "img/v20_6.webp", "img/v20_7.webp", "img/v20_8.webp", "img/v20_9.webp", "img/v20_10.webp"]
+    "tipo": "ofertavacaciones",
+    "hotel_plan": "",
+    "precio": "150 USD/noche </br> OFERTA VACACIONES",
+    "descripcion": "Zona exclusiva de Siboney con piscina gigante. ",
+    "fotos": ["img/v20_1.webp", "img/v20_2.webp", "img/v20_3.webp", "img/v20_4.webp", "img/v20_5.webp", "img/v20_6.webp", "img/v20_7.webp", "img/v20_8.webp", "img/v20_9.webp", "img/v20_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   },
   {
     "id": 21,
     "titulo": "Renta 21 - Mini Apto",
     "tipo": "renta",
+    "hotel_plan": "",
     "precio": "25 USD/noche",
     "descripcion": "Para parejas, entrada independiente.",
-    "fotos": ["img/v21_1.webp", "img/v21_2.webp", "img/v21_3.webp", "img/v21_4.webp", "img/v21_5.webp", "img/v21_6.webp", "img/v21_7.webp", "img/v21_8.webp", "img/v21_9.webp", "img/v21_10.webp"]
-  },
-  {
-    "id": 22,
-    "titulo": "Renta 22 - Mansión 1920",
-    "tipo": "renta",
-    "precio": "110 USD/noche",
-    "descripcion": "Arquitectura clásica en el Vedado.",
-    "fotos": ["img/v22_1.webp", "img/v22_2.webp", "img/v22_3.webp", "img/v22_4.webp", "img/v22_5.webp", "img/v22_6.webp", "img/v22_7.webp", "img/v22_8.webp", "img/v22_9.webp", "img/v22_10.webp"]
-  },
-  {
-    "id": 23,
-    "titulo": "Renta 23 - Balcón Cubano",
-    "tipo": "renta",
-    "precio": "30 USD/noche",
-    "descripcion": "Disfruta el aire de la tarde en Habana Vieja.",
-    "fotos": ["img/v23_1.webp", "img/v23_2.webp"]
+    "fotos": ["img/v21_1.webp", "img/v21_2.webp", "img/v21_3.webp", "img/v21_4.webp", "img/v21_5.webp", "img/v21_6.webp", "img/v21_7.webp", "img/v21_8.webp", "img/v21_9.webp", "img/v21_10.webp"],
+    "link_fb": "estamos en facebook",
+    "link_wa": "estamos en whatsapp",
+    "link_contacto_wa": "me interesa, contactar por whatsapp"
   }
+  
 ]

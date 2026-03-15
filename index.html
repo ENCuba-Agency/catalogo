@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENCuba Agency - Catálogo Optimizado</title>
+    <title>ENCuba Agencia - Catálogo Optimizado</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>🇨🇺 ENCuba Agency</h1>
+        <h1>🇨🇺 ENCuba Agencia</h1>
+        <h3>&nbsp;&nbsp;Ofertas Recientes</h3>
         <div class="filtros-tipo">
-            <button onclick="filtrarPorTipo('todos')">🌟 Todo</button>
+            <button onclick="filtrarPorTipo('todo')">🌟 Todo</button>
             <button onclick="filtrarPorTipo('renta')">🏠 Rentas</button>
+            <button onclick="filtrarPorTipo('hotel')">🏨 Hoteles</button>
             <button onclick="filtrarPorTipo('pasadia')">🏊‍♂️ Pasadías</button>
+            <button onclick="filtrarPorTipo('piscina')">Piscinas</button>
+            <button onclick="filtrarPorTipo('transporte')">Transporte</button>
+            <button onclick="filtrarPorTipo('ofertafinsemana')">Oferta Fin de Semana</button>
+            <button onclick="filtrarPorTipo('ofertavacaciones')">Oferta Semana Vacaciones</button>
         </div>
-        <input type="text" id="buscador" placeholder="Buscar lugar o precio...">
+        <input type="text" id="buscador" placeholder="Buscar dentro del título...">
     </header>
 
     <main>
-        <div id="contenedor-casas" class="galeria"></div>
+        <div id="contenedor-items" class="galeria"></div>
 
         <div class="paginacion">
             <button id="btn-anterior" onclick="cambiarPagina(-1)">⬅️ Anterior</button>
@@ -29,7 +35,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 ENCuba-Agency - Gestión de Catálogo Digital</p>
+        <p>&copy; 2024 ENCuba-Agency - Catálogo Digital - Ofertas Recientes</p>
     </footer>
 
     <script src="js/anuncios.js"></script>

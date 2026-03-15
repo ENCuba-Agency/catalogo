@@ -26,7 +26,7 @@ body {
 .contenedor-fotos::-webkit-scrollbar { display: none; }
 
 /* TARJETAS */
-.tarjeta-casa {
+.tarjeta-item {
     background: white;
     border-radius: 12px;
     margin-bottom: 20px;
@@ -63,3 +63,34 @@ body {
         gap: 20px;
     }
 }
+
+.btn-contacto {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.btn-contacto:hover {
+    background-color: #128C7E; /* Verde más oscuro para el feedback visual */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto al hacer clic */
+.btn-contacto:active {
+    transform: translateY(0);
+}
+
+
+
+<a href="${generarEnlaceWhatsApp(anuncio.id, anuncio.titulo)}" 
+                    target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
