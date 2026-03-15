@@ -128,6 +128,7 @@ header {
 .enlaces-secundarios {
     display: flex;
     gap: 10px;
+    margin-top: 5px; /* Pegaditos al botón de WhatsApp */
     justify-content: space-between;
 }
 
@@ -153,6 +154,19 @@ header {
 /* Colores sutiles para identificar la red */
 .btn-red-social.fb { color: #1877F2; border-color: #1877F233; }
 .btn-red-social.canal { color: #25D366; border-color: #25D36633; }
+
+/* Colores de marca solo en el borde y texto al pasar el mouse o foco */
+.btn-red-social.fb:hover {
+    color: #1877F2;
+    border-color: #1877F2;
+    background: #f0f7ff;
+}
+
+.btn-red-social.canal:hover {
+    color: #25D366;
+    border-color: #25D366;
+    background: #f0fff5;
+}
 
 /* Estilo base para todos los botones de filtro */
 .filtros-tipo button {
@@ -194,10 +208,11 @@ header {
 
 .filtros-tipo button {
     flex: 0 0 auto; /* Evita que se encojan */
-    min-width: 110px; /* Al darles este ancho, el 4to botón quedará "cortado" a la mitad */
+    min-width: 90px; /* Al darles este ancho, el 4to botón quedará "cortado" a la mitad */
+    padding: 6px 10px;
+    font-size: 0.85em;
+    border-radius: 15px;
     scroll-snap-align: start;
-    padding: 8px 12px;
-    border-radius: 20px;
 }
 
 header h1 {
