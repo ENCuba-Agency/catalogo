@@ -126,3 +126,21 @@ function generarEnlaceWhatsApp(id, titulo) {
 
 cargarDatos();
 
+
+const filtrosContenedor = document.getElementById('contenedorFiltros');
+const flechaIndicadora = document.getElementById('flechaIndicadora');
+
+if (filtrosContenedor && flechaIndicadora) {
+    filtrosContenedor.addEventListener('scroll', () => {
+        const scrollMaximo = filtrosContenedor.scrollWidth - filtrosContenedor.clientWidth;
+        const scrollActual = filtrosContenedor.scrollLeft;
+
+        // Si llegamos al final, ocultamos la flecha
+        if (scrollActual >= (scrollMaximo - 10)) {
+            flechaIndicadora.style.opacity = '0';
+        } else {
+            flechaIndicadora.style.opacity = '1';
+        }
+    });
+}
+

@@ -231,6 +231,7 @@ header {
     font-size: 1.2rem;
     pointer-events: none; /* No estorba al hacer clic */
     transition: opacity 0.3s ease;
+    z-index: 10; /* Añade esto para que la flecha flote sobre los botones */
 }
 
 /* Clase para ocultar la flecha cuando ya no sea necesaria */
