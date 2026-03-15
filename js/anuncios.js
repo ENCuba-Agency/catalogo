@@ -67,20 +67,29 @@ function actualizarPantalla() {
 
         contenedor.innerHTML += `
             <div class="tarjeta-item">
-                <div class="contenedor-fotos">${fotos}</div>
+                <div class="contenedor-fotos">
+                    ${fotos}
+                </div>
+
                 <div class="info">
                     <small>${item.tipo.toUpperCase()}</small>
                     <h3>${item.titulo}</h3>
-                    <p><b>${item.precio}</b></p>
-                    <p><b>${item.plan}</b></p>
+                    <p class="precio-plan"><b>${item.precio}</b> </br> • <span>${item.plan}</span></p>
 
-                    <p>
-                    <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
-                    target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
-                    </p>
+                    <div class="acciones">
+                      <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
+                      target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
 
-                    <p>${item.link_fb}</p>
-                    <p>${item.link_wa}</p>
+                        <div class="enlaces-secundarios">
+                            <a href="${item.link_fb}" target="_blank" class="btn-red-social fb">
+                                Facebook
+                            </a>
+                    
+                            <a href="${item.link_wa}" target="_blank" class="btn-red-social canal">
+                                Canal WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>`;
     });
