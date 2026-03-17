@@ -56,7 +56,8 @@ function aplicarFiltros() {
         const matchTexto = c.titulo.toLowerCase().includes(texto) || 
                            //c.id.toLowerCase().includes(texto) || 
                            c.plan.toLowerCase().includes(texto) || 
-                           c.precio.toLowerCase().includes(texto);
+                           c.precio.toLowerCase().includes(texto) || 
+                           c.lugar.toLowerCase().includes(texto);
 
                            
 
@@ -112,6 +113,7 @@ function actualizarPantalla() {
                 <div class="info">
                     <small>${item.tipo.toUpperCase()}</small>
                     <h3>${item.titulo}</h3>
+                    <span>${item.lugar}</span>
                     <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
 
                     <div class="acciones">

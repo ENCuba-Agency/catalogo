@@ -1,12 +1,13 @@
 ,
 {
-    "id": "yymmdd-hhmm-xx",
+    "id": "",
     "titulo": "",
+    "lugar": "",
     "tipo": "",
     "plan": "",
-    "precio": "",
+    "precio": "<br><br>📆 ",
     "descripcion": "",
-    "fotos": [""],
+    "fotos": ["img/"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   }
