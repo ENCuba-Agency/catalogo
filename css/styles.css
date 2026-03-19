@@ -1,18 +1,21 @@
 /* BASE Y TIPOGRAFÍA DEL SISTEMA (No gasta datos bajando fuentes) */
 body {
     font-family: -apple-system, system-ui, sans-serif;
-    background-color: #ebedef;
+    background-color: #d1d5db;
     margin: 0;
     padding: 10px;
+    /* Suaviza el renderizado de fuentes */
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000; /* Asegura que pase por encima de las fotos */
-    background-color: #f4f4f4; /* Debe coincidir con el fondo del body o ser blanco */
+    background-color: #f8f9fa; /* Debe coincidir con el fondo del body o ser blanco */
     padding: 2px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #bbc1c9; /* Borde un poco más oscuro */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra para que flote sobre el fondo oscuro */
 }
 
 /* CARRUSEL DE FOTOS (Desliza con el dedo) */
@@ -45,6 +48,7 @@ header {
     border-radius: 16px; /* Bordes más modernos */
     box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra difuminada y suave */
     border: 1px solid rgba(0,0,0,0.03); /* Borde casi invisible para definir */
+    margin-bottom: 25px; /* <--- Añade esto para separar los anuncios en vertical */
 }
 
 .info { padding: 15px; }
@@ -73,7 +77,11 @@ header {
     .galeria {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
+        gap: 30px;
+    }
+
+    .tarjeta-item {
+        margin-bottom: 0; /* En PC el gap ya hace el trabajo, así que reseteamos el margen */
     }
 }
 
@@ -312,4 +320,8 @@ header h1 {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.galeria {
+    margin-top: 15px; /* Separa el primer anuncio de la barra de filtros */
 }
