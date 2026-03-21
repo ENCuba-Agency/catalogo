@@ -1,272 +1,20 @@
-/* BASE Y TIPOGRAFÍA DEL SISTEMA (No gasta datos bajando fuentes) */
+/* 1. CONFIGURACIÓN BASE */
 body {
     font-family: -apple-system, system-ui, sans-serif;
     background-color: #d1d5db;
     margin: 0;
     padding: 10px;
-    /* Suaviza el renderizado de fuentes */
     -webkit-font-smoothing: antialiased;
 }
 
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Asegura que pase por encima de las fotos */
-    background-color: #f8f9fa; /* Debe coincidir con el fondo del body o ser blanco */
+    z-index: 1000;
+    background-color: #f8f9fa;
     padding: 2px 0;
-    border-bottom: 1px solid #bbc1c9; /* Borde un poco más oscuro */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra para que flote sobre el fondo oscuro */
-}
-
-/* CARRUSEL DE FOTOS (Desliza con el dedo) */
-.contenedor-fotos {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    height: 250px;
-    background-color: #eee; /* Color de fondo mientras carga la imagen */
-    border-radius: 12px 12px 0 0;
-    /* Optimización de renderizado */
-    content-visibility: auto;
-    contain-intrinsic-size: 1px 250px;
-}
-
-.contenedor-fotos img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    scroll-snap-align: start;
-    content-visibility: auto; /* Optimiza el renderizado */
-}
-
-/* OCULTAR BARRA DE SCROLL */
-.contenedor-fotos::-webkit-scrollbar { display: none; }
-
-/* TARJETAS */
-.tarjeta-item {
-    background: white;
-    border-radius: 16px; /* Bordes más modernos */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra difuminada y suave */
-    border: 1px solid rgba(0,0,0,0.03); /* Borde casi invisible para definir */
-    margin-bottom: 25px; /* <--- Añade esto para separar los anuncios en vertical */
-}
-
-.info { padding: 15px; }
-
-/* PAGINACIÓN */
-.paginacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
-}
-
-.paginacion button {
-    padding: 10px 15px;
-    border-radius: 8px;
-    border: none;
-    background: #007bff;
-    color: white;
-}
-
-.paginacion button:disabled { background: #ccc; }
-
-/* VISTA PC (Más de 768px) */
-@media (min-width: 768px) {
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 30px;
-    }
-
-    .tarjeta-item {
-        margin-bottom: 0; /* En PC el gap ya hace el trabajo, así que reseteamos el margen */
-    }
-}
-
-.btn-contacto {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #25D366; /* Verde oficial de WhatsApp */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
-    text-align: center;
-}
-
-/* Efecto al pasar el ratón (Hover) */
-.btn-contacto:hover {
-    background-color: #128C7E; /* Verde más oscuro para el feedback visual */
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Efecto al hacer clic */
-.btn-contacto:active {
-    transform: translateY(0);
-}
-
-/* Contenedor de información */
-.info h3 {
-    color: #1a1a1a; /* Negro casi puro para el título */
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-}
-
-.precio-plan {
-    color: #34495e; /* Azul grisáceo oscuro, muy elegante */
-    font-size: 1.05rem;
-    letter-spacing: -0.2px;
-}
-
-.precio-plan b {
-    color: #1a1a1a; /* El precio en negro para que resalte */
-    margin-bottom: 8px; /* Este es el espacio que buscas */
-    display: inline-block; /* Asegura que el margen se aplique correctamente */
-}
-
-/* Grupo de botones */
-.acciones {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* Botones secundarios (FB y Canal) */
-.enlaces-secundarios {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px; /* Pegaditos al botón de WhatsApp */
-    justify-content: space-between;
-}
-
-.btn-red-social {
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    font-size: 0.85em;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    border: 1px solid #ddd;
-    color: #555;
-    background: #f9f9f9;
-    transition: all 0.2s;
-}
-
-.btn-red-social:hover {
-    background: #eee;
-    border-color: #bbb;
-}
-
-/* Colores sutiles para identificar la red */
-.btn-red-social.fb { color: #1877F2; border-color: #1877F233; }
-.btn-red-social.canal { color: #25D366; border-color: #25D36633; }
-
-/* Colores de marca solo en el borde y texto al pasar el mouse o foco */
-.btn-red-social.fb:hover {
-    color: #1877F2;
-    border-color: #1877F2;
-    background: #f0f7ff;
-}
-
-.btn-red-social.canal:hover {
-    color: #25D366;
-    border-color: #25D366;
-    background: #f0fff5;
-}
-
-/* Estilo base para todos los botones de filtro */
-.filtros-tipo button {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    background: white;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9em;
-}
-
-/* Estilo cuando el botón está seleccionado */
-.filtros-tipo button.active {
-    background-color: #007bff; /* Color azul para resaltar */
-    color: white;
-    border-color: #0056b3;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-/* El contenedor padre debe ser relativo */
-.wrapper-filtros {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Alinea filtros arriba y flecha abajo */
-    align-items: center;
-    padding-bottom: 5px;
-}
-
-/* CONTENEDOR DE FILTROS (Optimización para móviles) */
-.filtros-tipo {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 8px;
-    padding: 10px 15px; /* Padding lateral para que el primer botón no pegue al borde */
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
-
-    margin-bottom: 5px;
-    scroll-snap-type: x mandatory;
-    
-    scroll-behavior: smooth;
-}
-
-/* Ocultar barra de scroll para que se vea como una App */
-.filtros-tipo::-webkit-scrollbar {
-    display: none;
-}
-
-/* Estilo de la flecha indicadora */
-.indicador-scroll {
-    display: flex;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    width: 100%;
-    padding: 5px 20px; /* Espacio extra a la derecha para que no pegue al borde físico */
-    color: #007bff;
-    font-size: 1.1rem; /* Tamaño equilibrado */
-    font-weight: bold;
-    box-sizing: border-box; /* Asegura que el padding no estire el contenedor */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    
-    /* Animación de vaivén hacia la derecha */
-    animation: bounceRight 1.5s infinite;
-}
-
-@keyframes bounceRight {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
-    40% { transform: translateX(-5px); } /* Movimiento de "ven hacia acá" */
-    60% { transform: translateX(-2px); }
-}
-
-/* Ocultar cuando no hay más scroll */
-.indicador-scroll.hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.filtros-tipo button {
-    flex: 0 0 auto; /* Evita que se encojan */
-    min-width: 90px; /* Al darles este ancho, el 4to botón quedará "cortado" a la mitad */
-    padding: 6px 10px;
-    font-size: 0.85em;
-    border-radius: 15px;
-    scroll-snap-align: start;
+    border-bottom: 1px solid #bbc1c9;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
@@ -275,6 +23,7 @@ header h1 {
     font-weight: 800;
 }
 
+/* 2. BUSCADOR Y FILTROS */
 .contenedor-buscador {
     padding: 10px 0;
     display: flex;
@@ -284,8 +33,8 @@ header h1 {
 #buscador {
     width: 90%;
     max-width: 500px;
-    padding: 5px;
-    border-radius: 25px; /* Bordes redondeados para un look más moderno */
+    padding: 8px;
+    border-radius: 25px;
     border: 1px solid #ccc;
     font-size: 1rem;
     outline: none;
@@ -297,104 +46,88 @@ header h1 {
     box-shadow: 0 0 5px rgba(0,123,255,0.2);
 }
 
-.sin-resultados {
-    grid-column: 1 / -1; /* Ocupa todo el ancho en la vista de PC */
-    text-align: center;
-    padding: 40px 20px;
+.wrapper-filtros {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.filtros-tipo {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 8px;
+    padding: 10px 15px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 5px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.filtros-tipo::-webkit-scrollbar { display: none; }
+
+.filtros-tipo button {
+    flex: 0 0 auto;
+    min-width: 90px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
     background: white;
-    border-radius: 12px;
-    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    scroll-snap-align: start;
 }
 
-.sin-resultados p {
-    color: #666;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.btn-limpiar {
+.filtros-tipo button.active {
     background-color: #007bff;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+    border-color: #0056b3;
     font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.galeria {
-    margin-top: 15px; /* Separa el primer anuncio de la barra de filtros */
+/* 3. GALERÍA Y TARJETAS */
+.galeria { margin-top: 15px; }
+
+.tarjeta-item {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+    margin-bottom: 25px;
+    overflow: hidden; /* Asegura que las fotos no se salgan de los bordes redondeados */
 }
 
-/* Nuevo contenedor para agrupar fotos y puntos */
+/* 4. CARRUSEL DE FOTOS */
 .contenedor-carrusel {
     position: relative;
     width: 100%;
 }
 
-/* Estilo para los puntos indicadores */
-.indicadores-fotos {
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 6px;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro semitransparente para ver los puntos */
-    padding: 5px 10px;
-    border-radius: 20px;
-    pointer-events: none; /* Para que no interfiera con el scroll */
-}
-
-.punto {
-    width: 8px;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.punto.activo {
-    background-color: white;
-    transform: scale(1.2);
-}
-
-/* Mejorar la barra de scroll en PC para que no sea fea */
 .contenedor-fotos {
-    scrollbar-width: thin; /* Para Firefox */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 250px;
+    background-color: #eee;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 250px;
+    scrollbar-width: thin;
     scrollbar-color: #007bff transparent;
 }
 
-/* Para Chrome/Safari (PC) */
-.contenedor-fotos::-webkit-scrollbar {
-    height: 4px;
-    display: block; /* La mostramos solo en PC */
-}
-
-.contenedor-fotos::-webkit-scrollbar-thumb {
-    background: #007bff;
-    border-radius: 10px;
-}
-
-/* En móviles ocultamos la barra, los puntos son suficientes */
-@media (max-width: 768px) {
-    .contenedor-fotos::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-/* Nuevo contenedor para agrupar fotos y puntos */
-.contenedor-carrusel {
-    position: relative;
+.contenedor-fotos img {
+    flex: 0 0 100%;
     width: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
 }
 
-/* Ocultar barra de scroll para que se vea como una App */
-/* .contenedor-fotos::-webkit-scrollbar { display: none; } */
-/* scrollbar-width: none;  */
-
-/* Estilo para los puntos indicadores */
+/* INDICADORES (PUNTOS) */
 .indicadores-fotos {
     position: absolute;
     bottom: 12px;
@@ -403,10 +136,9 @@ header h1 {
     display: flex;
     gap: 6px;
     z-index: 10;
-    /* background: rgba(0, 0, 0, 0.3); */ /* Fondo oscuro semitransparente para ver los puntos */
+    background: rgba(0, 0, 0, 0.3);
     padding: 5px 10px;
     border-radius: 20px;
-    pointer-events: none; /* Para que no interfiera con el scroll */
 }
 
 .punto {
@@ -416,7 +148,6 @@ header h1 {
     border-radius: 50%;
     transition: all 0.3s ease;
     cursor: pointer;
-    pointer-events: auto; /* Para que se pueda hacer clic en los puntos */
 }
 
 .punto.activo {
@@ -424,7 +155,7 @@ header h1 {
     transform: scale(1.2);
 }
 
-/* Estilo para las flechas laterales (PC) */
+/* FLECHAS PC */
 .btn-carrusel {
     position: absolute;
     top: 50%;
@@ -442,24 +173,83 @@ header h1 {
     cursor: pointer;
     z-index: 20;
     transition: all 0.2s ease;
-    opacity: 0; /* Ocultas por defecto */
+    opacity: 0;
 }
 
-.contenedor-carrusel:hover .btn-carrusel {
-    opacity: 1; /* Aparecen al pasar el mouse por encima del carrusel */
-}
-
-.btn-carrusel:hover {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
+.contenedor-carrusel:hover .btn-carrusel { opacity: 1; }
 .btn-carrusel.anterior { left: 10px; }
 .btn-carrusel.siguiente { right: 10px; }
 
-/* En móviles ocultamos las flechas */
+/* 5. INFORMACIÓN Y BOTONES */
+.info { padding: 15px; }
+
+.precio-plan {
+    color: #34495e;
+    font-size: 1.05rem;
+    letter-spacing: -0.2px;
+}
+
+.precio-plan b {
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.btn-contacto {
+    display: block;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+/* 6. UTILIDADES Y PAGINACIÓN */
+.indicador-scroll {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px 20px;
+    color: #007bff;
+    font-weight: bold;
+    animation: bounceRight 1.5s infinite;
+}
+
+@keyframes bounceRight {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+    40% { transform: translateX(-5px); }
+    60% { transform: translateX(-2px); }
+}
+
+.indicador-scroll.hidden { display: none; }
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+/* 7. RESPONSIVE (MÓVIL Y PC) */
 @media (max-width: 768px) {
-    .btn-carrusel {
-        display: none !important;
+    .btn-carrusel { display: none !important; }
+    .contenedor-fotos::-webkit-scrollbar { display: none; }
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
     }
+    .tarjeta-item { margin-bottom: 0; }
 }
