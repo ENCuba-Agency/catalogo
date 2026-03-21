@@ -219,7 +219,10 @@ header h1 {
     width: 100%;
     padding: 5px 20px;
     color: #007bff;
+    font-size: 1.1rem; /* Tamaño equilibrado */
     font-weight: bold;
+    box-sizing: border-box; /* Asegura que el padding no estire el contenedor */
+    transition: opacity 0.3s ease, transform 0.3s ease;
     animation: bounceRight 1.5s infinite;
 }
 
@@ -229,7 +232,12 @@ header h1 {
     60% { transform: translateX(-2px); }
 }
 
-.indicador-scroll.hidden { display: none; }
+/* Ocultar cuando no hay más scroll */
+.indicador-scroll.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .paginacion {
     display: flex;
