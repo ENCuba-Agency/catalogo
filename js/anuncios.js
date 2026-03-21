@@ -91,7 +91,7 @@ function actualizarPantalla() {
     // SI HAY RESULTADOS, MOSTRAR PAGINACIÓN Y CARDS
     document.querySelector('.paginacion').style.display = 'flex';
 
-
+/*
     bloque.forEach(item => {
 
         let fotos = item.fotos.map((url, i) => {
@@ -126,6 +126,53 @@ function actualizarPantalla() {
                 </div>
             </div>`;
     });
+*/
+
+    bloque.forEach(item => {
+    // Generar el HTML de las imágenes
+    let fotosHtml = item.fotos.map((url, i) => {
+        return `<img src="${url}" ${i > 0 ? 'loading="lazy"' : ''} alt="${item.titulo}">`;
+    }).join('');
+
+    // Generar los "puntos" indicadores (dots) y flechas
+    // Solo se crean si hay más de una foto
+    let puntosHtml = '';
+    let flechasHtml = '';
+    if (item.fotos.length > 1) {
+        puntosHtml = `<div class="indicadores-fotos">
+            ${item.fotos.map((_, i) => `<span class="punto ${i === 0 ? 'activo' : ''}" onclick="irAFoto(this, ${i})"></span>`).join('')}
+        </div>`;
+        
+        flechasHtml = `
+            <button class="btn-carrusel anterior" onclick="deslizarFoto(this, -1)">❮</button>
+            <button class="btn-carrusel siguiente" onclick="deslizarFoto(this, 1)">❯</button>
+        `;
+    }
+
+    contenedor.innerHTML += `
+        <div class="tarjeta-item">
+            <div class="contenedor-carrusel">
+                <div class="contenedor-fotos" onscroll="actualizarPuntos(this)">
+                    ${fotosHtml}
+                </div>
+                ${puntosHtml}
+                ${flechasHtml}
+            </div>
+
+            <div class="info">
+                <small>${item.tipo.toUpperCase()}</small>
+                <h3>${item.titulo}</h3>
+                <span>${item.lugar}</span>
+                <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
+                <span><b>${item.descripcion}</b><br><br></span>
+
+                <div class="acciones">
+                  <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
+                  target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
+                </div>
+            </div>
+        </div>`;
+});
 
     // Actualizar botones de página
     const totalPag = Math.ceil(itemsFiltrados.length / itemsPorPagina);
@@ -217,5 +264,43 @@ function gestionarFlecha() {
     } else {
         flecha.classList.remove('hidden');
     }
+}
+
+// 1. Actualiza los puntos cuando se hace scroll (con el dedo o flecha)
+function actualizarPuntos(el) {
+    const scrollLeft = el.scrollLeft;
+    const anchoFoto = el.clientWidth;
+    const indice = Math.round(scrollLeft / anchoFoto);
+    
+    // Buscar los puntos dentro del contenedor padre de este carrusel
+    const puntos = el.parentElement.querySelectorAll('.punto');
+    puntos.forEach((p, i) => {
+        if (i === indice) p.classList.add('activo');
+        else p.classList.remove('activo');
+    });
+}
+
+// 2. Lógica para las flechas laterales (anterior/siguiente)
+function deslizarFoto(btn, direccion) {
+    // Buscar el contenedor de fotos hermano de este botón
+    const carrusel = btn.parentElement.querySelector('.contenedor-fotos');
+    const anchoFoto = carrusel.clientWidth;
+    
+    carrusel.scrollBy({
+        left: anchoFoto * direccion,
+        behavior: 'smooth'
+    });
+}
+
+// 3. Lógica para hacer clic directamente en los puntos
+function irAFoto(punto, indice) {
+    // Buscar el contenedor de fotos padre de este punto
+    const carrusel = punto.parentElement.parentElement.querySelector('.contenedor-fotos');
+    const anchoFoto = carrusel.clientWidth;
+    
+    carrusel.scrollTo({
+        left: anchoFoto * indice,
+        behavior: 'smooth'
+    });
 }
 

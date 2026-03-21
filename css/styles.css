@@ -325,3 +325,141 @@ header h1 {
 .galeria {
     margin-top: 15px; /* Separa el primer anuncio de la barra de filtros */
 }
+
+/* Nuevo contenedor para agrupar fotos y puntos */
+.contenedor-carrusel {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para los puntos indicadores */
+.indicadores-fotos {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro semitransparente para ver los puntos */
+    padding: 5px 10px;
+    border-radius: 20px;
+    pointer-events: none; /* Para que no interfiera con el scroll */
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.punto.activo {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Mejorar la barra de scroll en PC para que no sea fea */
+.contenedor-fotos {
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #007bff transparent;
+}
+
+/* Para Chrome/Safari (PC) */
+.contenedor-fotos::-webkit-scrollbar {
+    height: 4px;
+    display: block; /* La mostramos solo en PC */
+}
+
+.contenedor-fotos::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+/* En móviles ocultamos la barra, los puntos son suficientes */
+@media (max-width: 768px) {
+    .contenedor-fotos::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Nuevo contenedor para agrupar fotos y puntos */
+.contenedor-carrusel {
+    position: relative;
+    width: 100%;
+}
+
+/* Ocultar barra de scroll para que se vea como una App */
+/* .contenedor-fotos::-webkit-scrollbar { display: none; } */
+/* scrollbar-width: none;  */
+
+/* Estilo para los puntos indicadores */
+.indicadores-fotos {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+    /* background: rgba(0, 0, 0, 0.3); */ /* Fondo oscuro semitransparente para ver los puntos */
+    padding: 5px 10px;
+    border-radius: 20px;
+    pointer-events: none; /* Para que no interfiera con el scroll */
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto; /* Para que se pueda hacer clic en los puntos */
+}
+
+.punto.activo {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Estilo para las flechas laterales (PC) */
+.btn-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s ease;
+    opacity: 0; /* Ocultas por defecto */
+}
+
+.contenedor-carrusel:hover .btn-carrusel {
+    opacity: 1; /* Aparecen al pasar el mouse por encima del carrusel */
+}
+
+.btn-carrusel:hover {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-carrusel.anterior { left: 10px; }
+.btn-carrusel.siguiente { right: 10px; }
+
+/* En móviles ocultamos las flechas */
+@media (max-width: 768px) {
+    .btn-carrusel {
+        display: none !important;
+    }
+}
