@@ -115,6 +115,7 @@ function actualizarPantalla() {
                     <h3>${item.titulo}</h3>
                     <span>${item.lugar}</span>
                     <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
+                    <span><b>${item.descripcion}</b><br><br></span>
 
                     <div class="acciones">
                       <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
