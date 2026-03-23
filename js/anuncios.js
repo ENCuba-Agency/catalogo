@@ -91,10 +91,15 @@ function actualizarPantalla() {
 
 
     bloque.forEach(item => {
-    // Generar el HTML de las imágenes
-    let fotosHtml = item.fotos.map((url, i) => {
-        return `<img src="${url}" ${i > 0 ? 'loading="lazy"' : ''} alt="${item.titulo}">`;
-    }).join('');
+
+    let fotosHtml = '';
+    if (item.fotos.length > 0) {
+        // Generar el HTML de las imágenes
+        //let fotosHtml = item.fotos.map((url, i) => {
+        fotosHtml = item.fotos.map((url, i) => {
+            return `<img src="${url}" ${i > 0 ? 'loading="lazy"' : ''} alt="${item.titulo}">`;
+        }).join(''); 
+    }
 
     // Generar los "puntos" indicadores (dots) y flechas
     // Solo se crean si hay más de una foto
@@ -111,7 +116,8 @@ function actualizarPantalla() {
         `;
     }
 
-    contenedor.innerHTML += `
+    if (item.fotos.length > 0) {
+        contenedor.innerHTML += `
         <div class="tarjeta-item">
             <div class="contenedor-carrusel">
                 <div class="contenedor-fotos" onscroll="actualizarPuntos(this)">
@@ -134,6 +140,27 @@ function actualizarPantalla() {
                 </div>
             </div>
         </div>`;
+    }
+    else {
+        contenedor.innerHTML += `
+        <div class="tarjeta-item">
+
+            <div class="info">
+                <small>${item.tipo.toUpperCase()}</small>
+                <h3>${item.titulo}</h3>
+                <span><b>${item.lugar}</b></span>
+                <p class="precio-plan"><b>${item.precio}</b><br><span><b>${item.plan}</b></span></p>
+                <span><b>${item.descripcion}</b><br><br></span>
+
+                <div class="acciones">
+                  <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
+                  target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
+                </div>
+            </div>
+        </div>`;
+    }
+
+    
 });
 
     // Actualizar botones de página
