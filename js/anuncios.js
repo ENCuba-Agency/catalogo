@@ -1,7 +1,5 @@
-//let todasLasCasas = [];
 let todosLosItems = [];
 
-//let casasFiltradas = [];
 let itemsFiltrados = [];
 
 let paginaActual = 1;
@@ -11,10 +9,9 @@ let filtroTipo = 'todo';
 async function cargarDatos() {
     try {
         const respuesta = await fetch('data/anuncios.json');
-        //todasLasCasas = await respuesta.json();
+        
         todosLosItems = await respuesta.json();
 
-        //casasFiltradas = todasLasCasas;
         itemsFiltrados = todosLosItems;
 
         actualizarPantalla();
@@ -57,7 +54,8 @@ function aplicarFiltros() {
                            //c.id.toLowerCase().includes(texto) || 
                            c.plan.toLowerCase().includes(texto) || 
                            c.precio.toLowerCase().includes(texto) || 
-                           c.lugar.toLowerCase().includes(texto);
+                           c.lugar.toLowerCase().includes(texto)|| 
+                           c.descripcion.toLowerCase().includes(texto);
 
                            
 
@@ -91,42 +89,6 @@ function actualizarPantalla() {
     // SI HAY RESULTADOS, MOSTRAR PAGINACIÓN Y CARDS
     document.querySelector('.paginacion').style.display = 'flex';
 
-/*
-    bloque.forEach(item => {
-
-        let fotos = item.fotos.map((url, i) => {
-        if (i === 0) {
-            // La primera foto carga normal para que no se vea vacío
-            return `<img src="${url}" alt="${item.titulo}">`;
-        } else {
-            // Las demás fotos usan lazy loading real
-            return `<img src="${url}" loading="lazy" alt="${item.titulo} - vista ${i + 1}">`;
-        }
-    }).join('');
-
-        contenedor.innerHTML += `
-            <div class="tarjeta-item">
-                <div class="contenedor-fotos">
-                    ${fotos}
-                </div>
-
-                <div class="info">
-                    <small>${item.tipo.toUpperCase()}</small>
-                    <h3>${item.titulo}</h3>
-                    <span>${item.lugar}</span>
-                    <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
-                    <span><b>${item.descripcion}</b><br><br></span>
-
-                    <div class="acciones">
-                      <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
-                      target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
-
-                        
-                    </div>
-                </div>
-            </div>`;
-    });
-*/
 
     bloque.forEach(item => {
     // Generar el HTML de las imágenes
@@ -162,8 +124,8 @@ function actualizarPantalla() {
             <div class="info">
                 <small>${item.tipo.toUpperCase()}</small>
                 <h3>${item.titulo}</h3>
-                <span>${item.lugar}</span>
-                <p class="precio-plan"><b>${item.precio}</b><br><span>${item.plan}</span></p>
+                <span><b>${item.lugar}</b></span>
+                <p class="precio-plan"><b>${item.precio}</b><br><span><b>${item.plan}</b></span></p>
                 <span><b>${item.descripcion}</b><br><br></span>
 
                 <div class="acciones">
@@ -231,20 +193,6 @@ if (filtrosContenedor && flechaIndicadora) {
 
     // Reemplaza tu antiguo event listener por este:
     filtrosContenedor.addEventListener('scroll', gestionarFlecha);
-    
-    /*
-    filtrosContenedor.addEventListener('scroll', () => {
-        const scrollMaximo = filtrosContenedor.scrollWidth - filtrosContenedor.clientWidth;
-        const scrollActual = filtrosContenedor.scrollLeft;
-
-        // Si llegamos al final, ocultamos la flecha
-        if (scrollActual >= (scrollMaximo - 10)) {
-            flechaIndicadora.style.opacity = '0';
-        } else {
-            flechaIndicadora.style.opacity = '1';
-        }
-    });
-    */
 }
 
 function gestionarFlecha() {

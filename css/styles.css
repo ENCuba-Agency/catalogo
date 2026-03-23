@@ -239,6 +239,8 @@ header h1 {
     pointer-events: none;
 }
 
+
+/* PAGINACIÓN */
 .paginacion {
     display: flex;
     justify-content: center;
@@ -246,6 +248,18 @@ header h1 {
     gap: 15px;
     padding: 20px 0;
 }
+
+.paginacion button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+}
+
+
+.paginacion button:disabled { background: #ccc; }
+
 
 /* 7. RESPONSIVE (MÓVIL Y PC) */
 @media (max-width: 768px) {
@@ -260,4 +274,30 @@ header h1 {
         gap: 30px;
     }
     .tarjeta-item { margin-bottom: 0; }
+}
+
+.sin-resultados {
+    grid-column: 1 / -1; /* Ocupa todo el ancho en la vista de PC */
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.sin-resultados p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+
+.btn-limpiar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
