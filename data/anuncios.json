@@ -610,6 +610,18 @@
     "fotos": ["img/Empty.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260323-1740-01",
+    "titulo": "Descubre nuestro acogedor apartamento en la Calle 23, ubicado en el corazón del Vedado, cerca de la Plaza de la Revolución. Ideal para disfrutar de la vibrante vida de La Habana.",
+    "lugar": "Vedado<br>📍 Ubicación: En una de las zonas más emblemáticas de La Habana, con fácil acceso a restaurantes, bares y atracciones turísticas.",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "• Precio: Solo 35 USD por noche por cada habitación<br>💲 Tarifa total: 1500 USD por toda la estancia (lineal).<br>",
+    "descripcion": "Características del apartamento:<br>• Habitaciones: 3 cómodas habitaciones<br>• Capacidad: Hasta 6 personas<br>• Respaldo energético: ¡No te preocupes por cortes de luz!",
+    "fotos": ["img/260323-1740-01-01.webp", "img/260323-1740-01-02.webp", "img/260323-1740-01-03.webp", "img/260323-1740-01-04.webp", "img/260323-1740-01-05.webp", "img/260323-1740-01-06.webp", "img/260323-1740-01-07.webp", "img/260323-1740-01-08.webp", "img/260323-1740-01-09.webp", "img/260323-1740-01-10.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
   }
   
   
