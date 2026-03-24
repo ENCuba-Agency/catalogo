@@ -623,7 +623,7 @@
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
-{
+  {
     "id": "260323-1743-01",
     "titulo": "Descubre la tranquilidad y comodidad de nuestra encantadora casa en el Reparto Náutico, una zona residencial ideal para disfrutar de unas vacaciones relajantes.",
     "lugar": "Ubicación: Reparto Náutico, un área residencial y muy tranquila.",
@@ -632,6 +632,18 @@
     "precio": "💲 Precio: 800 USD por toda la casa, ¡y estamos abiertos a ajustes!<br>",
     "descripcion": "Características de la propiedad:<br>• Habitaciones: Dos habitaciones climatizadas con posibilidad de una tercera<br>• Baños: Tres baños completos<br>• Espacios comunes: Sala grande y acogedora, comedor espacioso<br>• Cocina: Totalmente equipada para que prepares tus platillos favoritos<br>• Conectividad: Wifi disponible para que te mantengas conectado",
     "fotos": ["img/260323-1743-01-01.webp", "img/260323-1743-01-02.webp", "img/260323-1743-01-03.webp", "img/260323-1743-01-04.webp", "img/260323-1743-01-05.webp", "img/260323-1743-01-06.webp", "img/260323-1743-01-07.webp", "img/260323-1743-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260323-1748-01",
+    "titulo": "Te invitamos a disfrutar de una estancia inolvidable en nuestra hermosa casa, ideal para grupos de hasta 8 personas.",
+    "lugar": "📍 Ubicación: 4ta Avenida, Varadero, justo al lado del Hotel Sunbeach y el Hotel Club Tropical",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "💲 Precio: Solo 110 USD por noche (35 USD por habitación)<br>",
+    "descripcion": "Con 3 cómodas habitaciones, cada una equipada con su propio baño, agua fría y caliente, secadora de pelo, aire acondicionado tipo split, TV y ventilador, ¡tendrás todo lo que necesitas para una experiencia relajante!<br>🏡 Características de la casa:<br>• Jardín y patio delantero<br>• Espacioso portal<br>• Acogedora sala y comedor<br>• Cocina totalmente equipada<br>• Climatización en toda la casa<br>📞 Contáctanos para más información y reservas. ¡Te esperamos!",
+    "fotos": ["img/260323-1748-01-01.webp", "img/260323-1748-01-02.webp", "img/260323-1748-01-03.webp", "img/260323-1748-01-04.webp", "img/260323-1748-01-05.webp", "img/260323-1748-01-06.webp", "img/260323-1748-01-07.webp", "img/260323-1748-01-08.webp", "img/260323-1748-01-09.webp", "img/260323-1748-01-10.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   }
