@@ -658,6 +658,30 @@
     "fotos": ["img/260323-1753-01-01.webp", "img/260323-1753-01-02.webp", "img/260323-1753-01-03.webp", "img/260323-1753-01-04.webp", "img/260323-1753-01-05.webp", "img/260323-1753-01-06.webp", "img/260323-1753-01-07.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260323-1814-01",
+    "titulo": "Te ofrecemos un acogedor apartamento en Galiano, Centro Habana, perfecto para disfrutar de tu estancia en la ciudad.",
+    "lugar": "Centro Habana",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "Precio: ¡Solo 30 USD por noche!<br>",
+    "descripcion": "Detalles del apartamento:<br>• Cantidad de habitaciones: 2<br>• Baños: 1<br>• Capacidad: Hasta 4 personas<br>• Cocina equipada: Sí<br>• Wifi: No disponible<br>• Garage: No disponible<br>• Climatización completa: Sí",
+    "fotos": ["img/260323-1814-01-01.webp", "img/260323-1814-01-02.webp", "img/260323-1814-01-03.webp", "img/260323-1814-01-04.webp", "img/260323-1814-01-05.webp", "img/260323-1814-01-06.webp", "img/260323-1814-01-07.webp", "img/260323-1814-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260323-1852-01",
+    "titulo": "VACACIONES DE ENSUEÑO A SOLO $200 USD<br>¡A 4 cuadras de la arena!",
+    "lugar": "Boca Ciega",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "$200 USD<br>",
+    "descripcion": "Casa de 4 habs. con TODO:<br>• Piscina refrescante 💦<br>• Ranchón para tus tardes<br>• Parqueo seguro 🚗<br>• Patio privado",
+    "fotos": ["img/260323-1852-01-01.webp", "img/260323-1852-01-02.webp", "img/260323-1852-01-03.webp", "img/260323-1852-01-04.webp", "img/260323-1852-01-05.webp", "img/260323-1852-01-06.webp", "img/260323-1852-01-07.webp", "img/260323-1852-01-08.webp", "img/260323-1852-01-09.webp", "img/260323-1852-01-10.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
   }
   
   
