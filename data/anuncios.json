@@ -12,54 +12,6 @@
     "link_wa": "link a whatsapp"
   },
   {
-    "id": "260307-1035-02",
-    "titulo": "☀️ Grand Packard ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "La Habana",
-    "tipo": "hotel",
-    "plan": "* Plan: Alojamiento y desayuno<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (CUP):<br><br>📆 MARZO<br>🧍🏻‍♀ 1 adulto: 143,000cup<br>👫🏻 2 adultos: 179,000cup<br>👩‍👦 1 adulto y 1 menor: 179,000cup<br>👨‍👩‍👧 2 adultos y 1 menor: 199,000cup",
-    "descripcion": "",
-    "fotos": ["img/260307-1035-02-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1035-03",
-    "titulo": "☀️ Memories Miramar Habana ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "La Habana",
-    "tipo": "hotel",
-    "plan": "* Plan: Alojamiento y desayuno<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (USD):<br><br>📆 MARZO<br>🧍🏻‍♀ 1 adulto: 350<br>👫🏻 2 adultos: 440<br>🧍🏻‍♀👫🏻 3 adultos: 555<br>👩‍👦 1 adulto y 1 menor: 350<br>👨‍👩‍👧 2 adultos y 1 menor: 515<br><br>🚫Precios sujetos a cambios",
-    "descripcion": "",
-    "fotos": ["img/260307-1035-03-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1035-04",
-    "titulo": "☀️ Gran Hotel Bristol Habana Vieja Meliá Collection ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "La Habana",
-    "tipo": "hotel",
-    "plan": "* Plan: Alojamiento y desayuno<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (CUP):<br><br>📆 MARZO<br>🧍🏻‍♀ 1 adulto: 103,000<br>👫🏻 2 adultos: 117,000<br>🧍🏻‍♀👫🏻 3 adultos: 157,000<br>👩‍👦 1 adulto y 1 menor: 163,000<br>👩‍👧‍👦 1 adulto y 2 menores: 177,000<br>👨‍👩‍👧 2 adulto y 1 menor: 177,000<br>👨‍👩‍👧 2 adulto y 1 menor: 204,500",
-    "descripcion": "",
-    "fotos": ["img/260307-1035-04-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1035-05",
-    "titulo": "☀️ Iberostar Laguna Azul ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "Varadero 🏖",
-    "tipo": "hotel",
-    "plan": "* Plan: Todo Incluido<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (USD):<br><br>📆 MARZO<br>🧍🏻‍♀ 1 adulto: 300<br>👫🏻 2 adultos: 440<br>🧍🏻‍♀👫🏻 3 adultos: 595<br>👩‍👦 1 adulto y 1 menor: 440<br>👨‍👩‍👧 2 adultos y 1 menor: 540",
-    "descripcion": "",
-    "fotos": ["img/260307-1035-05-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
     "id": "260307-1035-06",
     "titulo": "☀️ Sanctuary en Grand Memories ⭐️⭐️⭐️⭐️⭐️",
     "lugar": "Varadero 🏖",
@@ -84,54 +36,6 @@
     "link_wa": "link a whatsapp"
   },
   {
-    "id": "260307-1036-02",
-    "titulo": "☀️ Paradisus Varadero Resort and Spa ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "Varadero 🏖",
-    "tipo": "hotel",
-    "plan": "* Plan: Todo incluido<br>* Mínimo de noches: 3",
-    "precio": "🔖 Precios por 3 noches por habitación (CUP):<br><br>📆 Febrero - Marzo<br>👫🏻 2 adultos: 155,000<br>🧍🏻‍♀👫🏻 3 adultos: 105,000<br>👨‍👩‍👧 2 adultos y 1 niño: 185,000<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 210,000",
-    "descripcion": "",
-    "fotos": ["img/260307-1036-02-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1036-03",
-    "titulo": "☀️ Grand Aston Varadero ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "Varadero 🏖",
-    "tipo": "hotel",
-    "plan": "* Plan: Todo Incluido<br>* Estancia mínima: 3 noches<br>* SOLO ADULTOS (+11 AÑOS)",
-    "precio": "🔖 Precios por 3 noches por habitación (CUP) :<br><br>📆 Marzo<br>🧍🏻‍♀ 1 adulto: 100,000<br>👫🏻 2 adultos: 140,000",
-    "descripcion": "",
-    "fotos": ["img/260307-1036-03-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1036-04",
-    "titulo": "☀️ Grand Aston La Habana ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "La Habana",
-    "tipo": "hotel",
-    "plan": "* Plan: Alojamiento y desayuno<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (USD):<br><br>📆 Febrero - Marzo<br>🧍🏻‍♀ 1 adulto: 390<br>👫🏻 2 adultos: 560<br>🧍🏻‍♀👫🏻 3 adultos: 735<br>👩‍👦 1 adulto y 1 menor: 495<br>👩‍👧‍👦 1 adulto y 2 menores: 560<br>👨‍👩‍👧 2 adulto y 1 menor: 665<br><br>🚫 Precios sujetos a cambios",
-    "descripcion": "",
-    "fotos": ["img/260307-1036-04-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
-    "id": "260307-1036-05",
-    "titulo": "☀️ Iberostar Selection La Habana ⭐️⭐️⭐️⭐️⭐️",
-    "lugar": "La Habana",
-    "tipo": "hotel",
-    "plan": "* Plan: Alojamiento y desayuno<br>* Estancia mínima: 3 noches",
-    "precio": "🔖 Precios por 3 noches por habitación (CUP):<br><br>📆 MARZO<br>🧍🏻‍♀ 1 adulto: 146,000<br>👫🏻 2 adultos: 180,000<br>1 adulto y 1 menor: 180,000<br>👨‍👩‍👧 2 adultos y 1 menor: 200,000<br><br>🚫Precios sujetos a cambios",
-    "descripcion": "",
-    "fotos": ["img/260307-1036-04-01.webp"],
-    "link_fb": "link a facebook",
-    "link_wa": "link a whatsapp"
-  },
-  {
     "id": "260309-2307-01",
     "titulo": "🏨 Sol Caribe Beach ⭐️⭐️⭐️⭐️",
     "lugar": "Varadero 🏖",
@@ -139,7 +43,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Marzo y Abril<br>🧍🏻‍♀ 1 adulto: 65 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 163 usd<br>👫🏻 2 adultos: 130 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 163 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 196 usd<br>🧍🏻‍♀👫🏻 3 adultos: 185 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -151,7 +55,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Marzo y Abril<br>🧍🏻‍♀ 1 adulto: 80 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 193 usd<br>👫🏻 2 adultos: 155 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 193 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 250 usd<br>🧍🏻‍♀👫🏻 3 adultos: 220 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -163,7 +67,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Marzo y Abril<br>🧍🏻‍♀ 1 adulto: 120 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 226 usd<br>👫🏻 2 adultos: 180 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 226 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 270 usd<br>🧍🏻‍♀👫🏻 3 adultos: 258 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -187,7 +91,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 90 usd<br>👫🏻 2 adultos: 130 usd<br>🧍🏻‍♀👫🏻 3 adultos: 225 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -199,7 +103,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 90 usd<br>👩‍👧‍👦 1 adultos y 2 niños: 127 usd<br>👫🏻 2 adultos: 127 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 127 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 158 usd<br>🧍🏻‍♀👫🏻 3 adultos: 180 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -211,7 +115,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 100 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 180 usd<br>👫🏻 2 adultos: 145 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 180 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 240 usd<br>🧍🏻‍♀👫🏻 3 adultos: 205 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -223,7 +127,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 125 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 178 usd<br>👫🏻 2 adultos: 178 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 178 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 220 usd<br>🧍🏻‍♀👫🏻 3 adultos: 252 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -235,7 +139,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 135 usd<br>👫🏻 2 adultos: 190 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -259,7 +163,7 @@
     "plan": "☀️ Estancia mínima de 2 noches",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 75 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 107 usd<br>👫🏻 2 adultos: 107 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 107 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 133 usd<br>🧍🏻‍♀👫🏻 3 adultos: 152 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -271,7 +175,7 @@
     "plan": "",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 80 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 110 usd<br>👫🏻 2 adultos: 110 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 110 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 135 usd<br>🧍🏻‍♀👫🏻 3 adultos: 155 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -283,7 +187,7 @@
     "plan": "☀️ Estancia mínima de 3 noches",
     "precio": "🔖 Precios por noche<br><br>📆 Mayo - Agosto<br>🧍🏻‍♀ 1 adulto: 127 usd<br>👩‍👧‍👦 1 adulto y 2 niños: 183 usd<br>👫🏻 2 adultos: 183 usd<br>👨‍👩‍👧 2 adultos y 1 niño: 183 usd<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 226 usd<br>🧍🏻‍♀👫🏻 3 adultos: 258 usd<br><br>🧾 Método de pago<br>- 10% al realizar la reserva<br>- 90% al llegar al hotel con tarjeta Clásica o tarjeta extranjera no emitida por bancos estadounidenses",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -295,7 +199,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 3 días y 2 noches:<br>👫🏻 2 adultos: 56 500 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 68 600 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 80 750 cup<br><br>☀️ 4 días y 3 noches:<br>👫🏻 2 adultos: 85 750 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 104 000 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 122 050 cup",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -307,7 +211,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 4 días y 3 noches:<br>👫🏻 2 adultos: 83 750 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 101 450 cup<br>🧍🏻‍♀👫🏻 3 adultos: 113 750 cup",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -319,7 +223,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 3 días y 2 noches:<br>👫🏻 2 adultos: 107 000 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 131 750 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 156 500 cup<br>🧍🏻‍♀👫🏻 3 adultos: 150 050 cup<br>🧍🏻‍♀ 👨‍👩‍👦 3 adultos y 1 niño: 175 800 cup<br><<br>☀️ 4 días y 3 noches:<br>👫🏻 2 adultos: 161 500 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 198 600 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 235 750 cup<br>🧍🏻‍♀👫🏻 3 adultos: 225 600 cup<br>🧍🏻‍♀ 👨‍👩‍👦 3 adultos y 1 niño: 263 750 cup",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -331,7 +235,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 4 días y 3 noches:<br>👫🏻 2 adultos: 162 500 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 200 000 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 250 500 cup<br>🧍🏻‍♀👫🏻 3 adultos: 225 800 cup<br>",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -355,7 +259,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 3 días y 2 noches:<br>👫🏻 2 adultos: 117 000 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 144 250 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 171 500 cup<br>🧍🏻‍♀👫🏻 3 adultos: 163 250 cup<br>🧍🏻‍♀ 👨‍👩‍👦 3 adultos y 1 niño: 190 500 cup<br><br>☀️ 4 días y 3 noches:<br>👫🏻 2 adultos: 176 500 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 217 250 cup<br>👨‍👩‍👦‍👦 2 adultos y 2 niños: 258 000 cup<br>🧍🏻‍♀👫🏻 3 adultos: 245 750 cup<br>🧍🏻‍♀ 👨‍👩‍👦 3 adultos y 1 niño: 286 600 cup<br>",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -367,7 +271,7 @@
     "plan": "",
     "precio": "🔖 Precios por la estancia completa<br><br>☀️ 4 días y 3 noches<br>Habitación Vista Mar Premium Superior<br>👫🏻 2 adultos: 260 000 cup<br>👨‍👩‍👧 2 adultos y 1 niño: 320 000 cup<br>",
     "descripcion": "",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
@@ -607,7 +511,7 @@
     "plan": "Hora de salida : 5:00/5:30 am<br>Hora de regreso: 4:30 pm",
     "precio": "Precio sin almuerzo: *6500 cup* <br><br>",
     "descripcion": "Incluye:<br>-🚎 Transporte de ida y regreso<br>-🏖️ Baño todo el día  en la playa en la zona de la 54<br>-🔭  Parada  en el Mirador de Bacunayagua<br>Parada en la zona del parque acuático<br><br>‼️Opcionales:<br>-🏄🏼‍♀️Visita al Parque Acuático<br>-🌴-Visita al Parque Jozone<br>-🎮Salon de juegos de aparatos virtuales (para todas las edades )<br>-Parque recreativo \"Todo en 1\"🎢🎠🎳 🎰(montaña rusa, bolera, aparatos para los niños)<br>-Paseo en bicicletas Acuáticas, paseo en trencito🚂<br>👧🏻👶🏽 Niños hasta 4 años que van cargados gratis.",
-    "fotos": ["img/Empty.webp"],
+    "fotos": ["img/playavacacionesfamilia.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
   },
