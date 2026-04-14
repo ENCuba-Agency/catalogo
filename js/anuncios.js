@@ -1,3 +1,5 @@
+//alert('filtrarPorLugar(lugar) {...158... lugarFiltro: ' + lugarFiltro);
+
 let todosLosItems = [];
 
 let itemsFiltrados = [];
@@ -6,17 +8,163 @@ let paginaActual = 1;
 const itemsPorPagina = 10;
 let filtroTipo = 'todo';
 
+// 1. Detectar idioma desde la URL (?lang=en)
+const params = new URLSearchParams(window.location.search);
+const lang = params.get('lang') || 'es'; // 'es' por defecto
+
+const traducciones = {
+    es: {
+        titulo: "🇨🇺 ENCuba Agencia",
+        buscar: "🔎 Buscar...",
+        anterior: "⬅️ Anterior",
+        siguiente: "Siguiente ➡️",
+        pagina: "Página",
+        de: "de",
+        footer: "© 2024 ENCuba-Agency - Catálogo Digital",
+        btnContacto: "💬 Contactar por WhatsApp",
+        msjWhatsApp: "Hola ENCuba, estoy interesado en el anuncio: "
+    },
+    esx: {
+        titulo: "🇨🇺 ENCuba Agencia",
+        buscar: "🔎 Buscar...",
+        anterior: "⬅️ Anterior",
+        siguiente: "Siguiente ➡️",
+        pagina: "Página",
+        de: "de",
+        footer: "© 2024 ENCuba-Agency - Catálogo Digital",
+        btnContacto: "💬 Contactar por WhatsApp",
+        msjWhatsApp: "Hola ENCuba, estoy interesado en el anuncio: "
+    },
+    en: {
+        titulo: "🇨🇺 ENCuba Agency",
+        buscar: "🔎 Search...",
+        anterior: "⬅️ Previous",
+        siguiente: "Next ➡️",
+        pagina: "Page",
+        de: "of",
+        footer: "© 2024 ENCuba-Agency - Digital Catalog",
+        btnContacto: "💬 Contact via WhatsApp",
+        msjWhatsApp: "Hello ENCuba, I am interested in: "
+    },
+    ru: {
+        titulo: "🇨🇺 Агентство ENCuba",
+        buscar: "🔎 Поиск...",
+        anterior: "⬅️ Назад",
+        siguiente: "Далее ➡️",
+        pagina: "Страница",
+        de: "из",
+        footer: "© 2024 ENCuba-Agency - Цифровой каталог",
+        btnContacto: "💬 Связаться через WhatsApp",
+        msjWhatsApp: "Здравствуйте, меня интересует: "
+    }
+};
+
+// 2. Función para traducir la interfaz fija
+function traducirInterfaz() {
+    
+    const t = traducciones[lang] || traducciones.es;
+    
+    document.getElementById('main-title').innerText = t.titulo;
+    document.getElementById('buscador').placeholder = t.buscar;
+    document.getElementById('btn-anterior').innerText = t.anterior;
+    document.getElementById('btn-siguiente').innerText = t.siguiente;
+    document.querySelector('footer p').innerText = t.footer;
+}
+
 async function cargarDatos() {
     try {
-        const respuesta = await fetch('data/anuncios.json');
+        // Cargará anuncios.json, anuncios_en.json, anuncios_esx.json o anuncios_ru.json
+        //const archivo = 'data/anuncios.json';
+        //const respuesta = await fetch('data/anuncios.json');
+        const archivo = lang === 'es' ? 'data/anuncios.json' : `data/anuncios_${lang}.json`;
+        const respuesta = await fetch(archivo);
         
         todosLosItems = await respuesta.json();
-
         itemsFiltrados = todosLosItems;
 
+        traducirInterfaz(); // Traducir letreros
+        generarFiltrosDinamicos(); // Generar botones de arriba
         actualizarPantalla();
     } catch (e) { console.error("Error cargando datos"); }
 }
+
+function generarFiltrosDinamicos() {
+    const contenedor = document.getElementById('contenedorFiltros');
+    contenedor.innerHTML = ''; // Limpiar lo que hay
+
+    if (lang === 'es') {
+        // Tu menú original para cubanos
+        const categorias = [
+            { id: 'todo', txt: '🌟 Todo' },
+            { id: 'renta', txt: '🏠 Rentas' },
+            { id: 'hotel', txt: '🏨 Hoteles' },
+            { id: 'pasadia', txt: '🌊 Pasadías' },
+            { id: 'piscina', txt: '🏊‍♂️ Piscinas' },
+            { id: 'transporte', txt: '🚌 Transporte' },
+            { id: 'fin de semana', txt: '🗓️ Fin de Semana' },
+            { id: 'vacaciones', txt: '🍹 Vacaciones' }
+        ];
+        categorias.forEach(cat => {
+            contenedor.innerHTML += `<button onclick="filtrarPorTipo('${cat.id}')" class="${cat.id==='todo'?'active':''}"> ${cat.txt}</button>`;
+        });
+    } 
+    else {
+        // Menú para extranjeros (Por lugar)
+        let lugares = [];
+
+        // SWITCH PARA DEFINIR LOS TEXTOS SEGÚN EL IDIOMA
+        switch (lang) {
+
+            case 'en':
+                lugares = [
+                    { id: 'todo', txt: '🌟 All' },
+                    { id: 'Habana', txt: '🏛️ Havana' },
+                    { id: 'Varadero', txt: '🏖️ Varadero' }
+                ];
+                break;
+
+            case 'ru':
+                lugares = [
+                    { id: 'todo', txt: '🌟 Все' },
+                    { id: 'Habana', txt: '🏛️ Гавана' },
+                    { id: 'Varadero', txt: '🏖️ Варадеро' }
+                ];
+                break;
+
+            case 'esx':
+            default:
+                lugares = [
+                    { id: 'todo', txt: '🌟 Todo' },
+                    { id: 'Habana', txt: '🏛️ La Habana' },
+                    { id: 'Varadero', txt: '🏖️ Varadero' }
+                ];
+                break;
+        };
+
+        lugares.forEach(lug => {
+            contenedor.innerHTML += `<button onclick="filtrarPorLugar('${lug.id}')" class="${lug.id==='todo'?'active':''}"> ${lug.txt}</button>`;
+        
+        });
+    }
+}
+
+// Nueva función de filtrado para extranjeros
+function filtrarPorLugar(lugar) {
+    lugarFiltro = lugar; // Reusamos la variable filtroTipo para no complicar el código
+    paginaActual = 1;
+    
+    // Cambiar clase active
+    document.querySelectorAll('.filtros-tipo button').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    if (lugar === 'todo') {
+        itemsFiltrados = todosLosItems;
+    } else {
+        itemsFiltrados = todosLosItems.filter(item => item.lugar.includes(lugar));
+    }
+    actualizarPantalla();
+}
+
 
 function filtrarPorTipo(tipo) {
     filtroTipo = tipo;
@@ -73,13 +221,42 @@ function actualizarPantalla() {
     const contenedor = document.getElementById('contenedor-items');
     contenedor.innerHTML = '';
 
+    const t = traducciones[lang] || traducciones.es;
+
     // SI NO HAY RESULTADOS
     if (itemsFiltrados.length === 0) {
-        contenedor.innerHTML = `
-            <div class="sin-resultados">
-                <p>🔍 No encontramos ofertas que coincidan con tu búsqueda.</p>
-                <button onclick="limpiarBusqueda()" class="btn-limpiar">Ver todas las ofertas</button>
-            </div>`;
+
+        
+
+        switch (lang) {
+
+            case 'en':
+                contenedor.innerHTML = `
+                    <div class="sin-resultados">
+                        <p>🔍 No encontramos ofertas que coincidan con tu búsqueda. (TRADUCIR AL INGLES)</p>
+                        <button onclick="limpiarBusqueda()" class="btn-limpiar">Ver todas las ofertas (TRADUCIR AL INGLES)</button>
+                    </div>`;
+                break;
+
+            case 'ru':
+                contenedor.innerHTML = `
+                    <div class="sin-resultados">
+                        <p>🔍 No encontramos ofertas que coincidan con tu búsqueda. (TRADUCIR AL RUSO)</p>
+                        <button onclick="limpiarBusqueda()" class="btn-limpiar">Ver todas las ofertas (TRADUCIR AL RUSO)</button>
+                    </div>`;
+                break;
+
+            case 'esx':
+            default:
+                contenedor.innerHTML = `
+                    <div class="sin-resultados">
+                        <p>🔍 No encontramos ofertas que coincidan con tu búsqueda.</p>
+                        <button onclick="limpiarBusqueda()" class="btn-limpiar">Ver todas las ofertas</button>
+                    </div>`;
+                break;
+
+        };
+            
         document.querySelector('.paginacion').style.display = 'none'; // Ocultar paginación
         gestionarFlecha(); // <--- Llamada aquí para ocultarla si no hay items
 
@@ -89,7 +266,7 @@ function actualizarPantalla() {
     // SI HAY RESULTADOS, MOSTRAR PAGINACIÓN Y CARDS
     document.querySelector('.paginacion').style.display = 'flex';
 
-
+    //loop de cards
     bloque.forEach(item => {
     // Generar el HTML de las imágenes
     let fotosHtml = item.fotos.map((url, i) => {
@@ -129,8 +306,9 @@ function actualizarPantalla() {
                 <span><b>${item.descripcion}</b><br><br></span>
 
                 <div class="acciones">
+                  
                   <a href="${generarEnlaceWhatsApp(item.id, item.titulo)}" 
-                  target="_blank" class="btn-contacto">💬 Contactar por WhatsApp</a>
+                  target="_blank" class="btn-contacto">${t.btnContacto}</a>
                 </div>
             </div>
         </div>`;
@@ -138,7 +316,9 @@ function actualizarPantalla() {
 
     // Actualizar botones de página
     const totalPag = Math.ceil(itemsFiltrados.length / itemsPorPagina);
-    document.getElementById('info-paginacion').innerText = `Página ${paginaActual} de ${totalPag || 1}`;
+
+    document.getElementById('info-paginacion').innerText = `${t.pagina} ${paginaActual} ${t.de} ${totalPag || 1}`;
+
     document.getElementById('btn-anterior').disabled = paginaActual === 1;
     document.getElementById('btn-siguiente').disabled = paginaActual >= totalPag;
 
