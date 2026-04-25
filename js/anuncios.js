@@ -14,46 +14,78 @@ const lang = params.get('lang') || 'es'; // 'es' por defecto
 
 const traducciones = {
     es: {
-        titulo: "🇨🇺 ENCuba Agencia",
+        tituloTab: "🇨🇺 Ofertas Recientes",
+        titulo: "🇨🇺 Ofertas Recientes",
         buscar: "🔎 Buscar...",
         anterior: "⬅️ Anterior",
         siguiente: "Siguiente ➡️",
         pagina: "Página",
         de: "de",
-        footer: "© 2024 ENCuba-Agency - Catálogo Digital",
+        footer: "© 2026 - Catálogo Digital",
+        footerPrimerP: "© 2026 - Catálogo Digital",
+        footerPrivacidad: "Privacidad:",
+        footerResponsabilidad: "Responsabilidad:",
+        footerTextoPrivacidad: "No recolectamos cookies ni datos personales en este sitio. Su comunicación con nosotros es directa y privada vía plataformas oficiales (WhatsApp/Messenger).",
+        footerTextoResponsabilidad: "Somos una plataforma de promoción. Nos esforzamos por la veracidad de la información, pero la ejecución del servicio es responsabilidad del proveedor de la propiedad.",
+        footerCanalFb: "Facebook",
+        footerCanalWs: "Canal de WhatsApp",
         btnContacto: "💬 Contactar por WhatsApp",
-        msjWhatsApp: "Hola ENCuba, estoy interesado en el anuncio: "
+        msjWhatsApp: "Hola, estoy interesado en el anuncio: "
     },
     esx: {
-        titulo: "🇨🇺 ENCuba Agencia",
+        tituloTab: "🇨🇺 Ofertas Recientes",
+        titulo: "🇨🇺 Ofertas Recientes",
         buscar: "🔎 Buscar...",
         anterior: "⬅️ Anterior",
         siguiente: "Siguiente ➡️",
         pagina: "Página",
         de: "de",
-        footer: "© 2024 ENCuba-Agency - Catálogo Digital",
+        footer: "© 2026 - Catálogo Digital",
+        footerPrivacidad: "Privacidad:",
+        footerResponsabilidad: "Responsabilidad:",
+        footerTextoPrivacidad: "No recolectamos cookies ni datos personales en este sitio. Su comunicación con nosotros es directa y privada vía plataformas oficiales (WhatsApp/Messenger).",
+        footerTextoResponsabilidad: "Somos una plataforma de promoción. Nos esforzamos por la veracidad de la información, pero la ejecución del servicio es responsabilidad del proveedor de la propiedad.",
+        footerPrimerP: "© 2026 - Catálogo Digital",
+        footerCanalFb: "Facebook",
+        footerCanalWs: "Canal de WhatsApp",
         btnContacto: "💬 Contactar por WhatsApp",
-        msjWhatsApp: "Hola ENCuba, estoy interesado en el anuncio: "
+        msjWhatsApp: "Hola, estoy interesado en el anuncio: "
     },
     en: {
-        titulo: "🇨🇺 ENCuba Agency",
+        tituloTab: "🇨🇺 Recent Offers",
+        titulo: "🇨🇺 Recent Offers",
         buscar: "🔎 Search...",
         anterior: "⬅️ Previous",
         siguiente: "Next ➡️",
         pagina: "Page",
         de: "of",
-        footer: "© 2024 ENCuba-Agency - Digital Catalog",
+        footer: "© 2026 - Digital Catalog",
+        footerPrimerP: "© 2026 - Digital Catalog",
+        footerPrivacidad: "Privacy:",
+        footerResponsabilidad: "Responsibility:",
+        footerTextoPrivacidad: "We do not collect cookies or personal data on this site. Your communication with us is direct and private via official platforms (WhatsApp/Messenger).",
+        footerTextoResponsabilidad: "We are a promotion platform. We strive for the accuracy of the information, but the execution of the service is the responsibility of the property provider.",
+        footerCanalFb: "Facebook",
+        footerCanalWs: "WhatsApp channel",
         btnContacto: "💬 Contact via WhatsApp",
-        msjWhatsApp: "Hello ENCuba, I am interested in: "
+        msjWhatsApp: "Hello, I am interested in: "
     },
     ru: {
-        titulo: "🇨🇺 Агентство ENCuba",
+        tituloTab: "🇨🇺 Последние предложения",
+        titulo: "🇨🇺 Последние предложения",
         buscar: "🔎 Поиск...",
         anterior: "⬅️ Назад",
         siguiente: "Далее ➡️",
         pagina: "Страница",
         de: "из",
-        footer: "© 2024 ENCuba-Agency - Цифровой каталог",
+        footer: "© 2026 - Цифровой каталог",
+        footerPrivacidad: "Конфиденциальность:",
+        footerResponsabilidad: "Ответственность:",
+        footerTextoPrivacidad: "Мы не собираем файлы cookie или личные данные на этом сайте. Ваше общение с нами является прямым и конфиденциальным через официальные платформы (WhatsApp/Messenger).",
+        footerTextoResponsabilidad: "Мы — площадка для продвижения. Мы стремимся к точности информации, но за выполнение услуги несет ответственность поставщик недвижимости.",
+        footerPrimerP: "© 2026 - Цифровой каталог",
+        footerCanalFb: "Фейсбук",
+        footerCanalWs: "WhatsApp-канал",
         btnContacto: "💬 Связаться через WhatsApp",
         msjWhatsApp: "Здравствуйте, меня интересует: "
     }
@@ -64,11 +96,18 @@ function traducirInterfaz() {
     
     const t = traducciones[lang] || traducciones.es;
     
+    document.getElementById('header-title').innerText = t.tituloTab;
     document.getElementById('main-title').innerText = t.titulo;
     document.getElementById('buscador').placeholder = t.buscar;
     document.getElementById('btn-anterior').innerText = t.anterior;
     document.getElementById('btn-siguiente').innerText = t.siguiente;
-    document.querySelector('footer p').innerText = t.footer;
+    document.querySelector('footer p#primerP').innerText = t.footerPrimerP;
+    document.querySelector('#main-footer div p spam#privacidad').innerText = t.footerPrivacidad;
+    document.querySelector('#main-footer div p spam#textoPrivacidad').innerText = t.footerTextoPrivacidad;
+    document.querySelector('#main-footer div p spam#responsabilidad').innerText = t.footerResponsabilidad;
+    document.querySelector('#main-footer div p spam#textoResponsabilidad').innerText = t.footerTextoResponsabilidad;
+    document.querySelector('footer p#canales a#fb').innerText = t.footerCanalFb;
+    document.querySelector('footer p#canales a#ws').innerText = t.footerCanalWs;
 }
 
 async function cargarDatos() {
