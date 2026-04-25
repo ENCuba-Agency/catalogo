@@ -160,7 +160,7 @@ function filtrarPorLugar(lugar) {
     if (lugar === 'todo') {
         itemsFiltrados = todosLosItems;
     } else {
-        itemsFiltrados = todosLosItems.filter(item => item.lugar.includes(lugar));
+        itemsFiltrados = todosLosItems.filter(item => item.lugarFiltro.includes(lugar));
     }
     actualizarPantalla();
 }
@@ -202,7 +202,7 @@ function aplicarFiltros() {
                            //c.id.toLowerCase().includes(texto) || 
                            c.plan.toLowerCase().includes(texto) || 
                            c.precio.toLowerCase().includes(texto) || 
-                           c.lugar.toLowerCase().includes(texto)|| 
+                           c.lugar.toLowerCase().includes(texto)||
                            c.descripcion.toLowerCase().includes(texto);
 
                            
