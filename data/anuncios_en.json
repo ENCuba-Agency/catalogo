@@ -234,6 +234,19 @@
     "link_wa": "link a whatsapp"
   },
   {
+    "id": "260315-2244-01",
+    "titulo": "Disponible lo mismo para una renta lineal que hospedajes puntuales, pero mínimo 3 días. ",
+    "lugar": "La Habana",
+    "lugarFiltro": "Habana",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "<br>",
+    "descripcion": "Tiene 3 habitaciones.<br>La master room con baño interior, AC, Tv set, Ventilador techo, caja fuerte.<br>Las otras 2 habitaciones con las mismas condiciones,  pero un baño intercalado.<br>El apartamento tiene sala climatizada y Tv set con canales adicionales. Comedor, cocina de gas habilitada con todo y portal. Calentador agua. Wifi y teléfono fijo.El apartamento se puede rentar para las rentas lineales lo mismo con 2 que con 3 habitaciones. De momento máximo 4 personas debido al problema con el suministro de agua por el deficit energético.",
+    "fotos": ["img/260315-2244-01-01.webp", "img/260315-2244-01-02.webp", "img/260315-2244-01-03.webp", "img/260315-2244-01-04.webp", "img/260315-2244-01-05.webp", "img/260315-2244-01-06.webp", "img/260315-2244-01-07.webp", "img/260315-2244-01-08.webp", "img/260315-2244-01-09.webp", "img/260315-2244-01-10.webp", "img/260315-2244-01-11.webp", "img/260315-2244-01-12.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
     "id": "260323-1740-01",
     "titulo": "Descubre nuestro acogedor apartamento en la Calle 23, ubicado en el corazón del Vedado, cerca de la Plaza de la Revolución. Ideal para disfrutar de la vibrante vida de La Habana.",
     "lugar": "Vedado<br>📍 Ubicación: En una de las zonas más emblemáticas de La Habana, con fácil acceso a restaurantes, bares y atracciones turísticas.",
