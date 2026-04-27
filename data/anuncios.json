@@ -564,6 +564,18 @@
     "link_wa": "link a whatsapp"
   },
   {
+    "id": "260315-2250-01",
+    "titulo": "Apto para renta lineal de una habitación, sin afectaciones  eléctricas.",
+    "lugar": "",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "500 usd renta lineal, 35 usd por noche",
+    "descripcion": "Agua caliente y fría, cocina eléctrica, minibar, ideal para estudiantes o una pareja sin niños. <br>El apartamento consta de una habitación,sala,cocina equipada con estufa de horno, microwave y todo lo indispensable en una cocina,<br>baño con agua fria y caliente,cuarto climatizado, lavadora automática, tv, etc. <br>Balcón a la calle, primer piso.<br> Situado en Lagunas  a dos cuadras del malecón, en zona soterrada hasta el momento sin apagones.",
+    "fotos": ["img/260315-2250-01-01.webp", "img/260315-2250-01-02.webp", "img/260315-2250-01-03.webp", "img/260315-2250-01-04.webp", "img/260315-2250-01-05.webp", "img/260315-2250-01-06.webp", "img/260315-2250-01-07.webp", "img/260315-2250-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
     "id": "260323-1740-01",
     "titulo": "Descubre nuestro acogedor apartamento en la Calle 23, ubicado en el corazón del Vedado, cerca de la Plaza de la Revolución. Ideal para disfrutar de la vibrante vida de La Habana.",
     "lugar": "Vedado<br>📍 Ubicación: En una de las zonas más emblemáticas de La Habana, con fácil acceso a restaurantes, bares y atracciones turísticas.",
