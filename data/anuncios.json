@@ -672,6 +672,30 @@
     "fotos": ["img/260309-2310-01-01.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1055-01",
+    "titulo": "Varadero. Casa de 3 habitaciones a 150 metros de la playa.",
+    "lugar": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "35 euros o CuP a cómo esté el euro por habitación diarios.<br>",
+    "descripcion": "Capacidad: 8 personas con niños incluidos. Comodidades: jardín, cercanía a la playa, cocina equipada<br>(precio ajustable con el arrendatario)",
+    "fotos": ["img/260501-1055-01-01.webp", "img/260501-1055-01-02.webp", "img/260501-1055-01-03.webp", "img/260501-1055-01-04.webp", "img/260501-1055-01-05.webp", "img/260501-1055-01-06.webp", "img/260501-1055-01-07.webp", "img/260501-1055-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1056-01",
+    "titulo": "Varadero. Casa con 4 Habitaciones y baños.",
+    "lugar": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "Precio: 120 euros casa completa<br>Habitaciones simples en 30 euro o usd <br>Habitaciones dobles en 50 euro o usd ",
+    "descripcion": "Capacidad para 9 personas. <br>(precio ajustable con el arrendatario)",
+    "fotos": ["img/260501-1056-01-01.webp", "img/260501-1056-01-02.webp", "img/260501-1056-01-03.webp", "img/260501-1056-01-04.webp", "img/260501-1056-01-05.webp", "img/260501-1056-01-06.webp", "img/260501-1056-01-07.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
   }
   
 ]

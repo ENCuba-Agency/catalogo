@@ -336,6 +336,32 @@
     "fotos": ["img/260323-1814-01-01.webp", "img/260323-1814-01-02.webp", "img/260323-1814-01-03.webp", "img/260323-1814-01-04.webp", "img/260323-1814-01-05.webp", "img/260323-1814-01-06.webp", "img/260323-1814-01-07.webp", "img/260323-1814-01-08.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1055-01",
+    "titulo": "Varadero. 3 bedroom house, 150 meters from the beach.",
+    "lugar": "Varadero",
+    "lugarFiltro": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "35 euros or CuP at the euro rate per room daily.<br>",
+    "descripcion": "Capacity: 8 people with children included. Amenities: garden, proximity to the beach, equipped kitchen<br>(price adjustable with the tenant)",
+    "fotos": ["img/260501-1055-01-01.webp", "img/260501-1055-01-02.webp", "img/260501-1055-01-03.webp", "img/260501-1055-01-04.webp", "img/260501-1055-01-05.webp", "img/260501-1055-01-06.webp", "img/260501-1055-01-07.webp", "img/260501-1055-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1056-01",
+    "titulo": "Varadero. House with 4 bedrooms and bathrooms.",
+    "lugar": "Varadero",
+    "lugarFiltro": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "Price: 120 euros complete house <br>Single rooms at 30 euro or usd <br>Double rooms at 50 euro or usd. ",
+    "descripcion": "Capacity for 9 people. <br>(price adjustable with the tenant)",
+    "fotos": ["img/260501-1056-01-01.webp", "img/260501-1056-01-02.webp", "img/260501-1056-01-03.webp", "img/260501-1056-01-04.webp", "img/260501-1056-01-05.webp", "img/260501-1056-01-06.webp", "img/260501-1056-01-07.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
   }
   
 ]

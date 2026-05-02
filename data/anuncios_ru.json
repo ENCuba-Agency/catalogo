@@ -336,6 +336,32 @@
     "fotos": ["img/260323-1814-01-01.webp", "img/260323-1814-01-02.webp", "img/260323-1814-01-03.webp", "img/260323-1814-01-04.webp", "img/260323-1814-01-05.webp", "img/260323-1814-01-06.webp", "img/260323-1814-01-07.webp", "img/260323-1814-01-08.webp"],
     "link_fb": "link a facebook",
     "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1055-01",
+    "titulo": "Varadero. 3 bedroom house 150 meters from the beach.",
+    "lugar": "Varadero",
+    "lugarFiltro": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "35 евро или CuP по курсу евро, за номер в сутки.<br>",
+    "descripcion": "Вместимость: 8 человек, включая детей. Удобства: сад, близость к пляжу, оборудованная кухня<br>(цена регулируется арендатором)",
+    "fotos": ["img/260501-1055-01-01.webp", "img/260501-1055-01-02.webp", "img/260501-1055-01-03.webp", "img/260501-1055-01-04.webp", "img/260501-1055-01-05.webp", "img/260501-1055-01-06.webp", "img/260501-1055-01-07.webp", "img/260501-1055-01-08.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
+  },
+  {
+    "id": "260501-1056-01",
+    "titulo": "Варадеро. Дом с 4 спальнями и ванными комнатами.",
+    "lugar": "Varadero",
+    "lugarFiltro": "Varadero",
+    "tipo": "renta",
+    "plan": "",
+    "precio": "Цена: 120 евро за весь дом <br>Одноместные номера по 30 евро или долларов США <br>Двухместные номера по 50 евро или долларов США. ",
+    "descripcion": "Вместимость 9 человек. <br>(цена договорная с арендатором)",
+    "fotos": ["img/260501-1056-01-01.webp", "img/260501-1056-01-02.webp", "img/260501-1056-01-03.webp", "img/260501-1056-01-04.webp", "img/260501-1056-01-05.webp", "img/260501-1056-01-06.webp", "img/260501-1056-01-07.webp"],
+    "link_fb": "link a facebook",
+    "link_wa": "link a whatsapp"
   }
   
 ]
